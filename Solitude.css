@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557-----*/
+/*------------------------------------------------------------------------*/
+/*------.container						----------*/
+/*------	.container image				----------*/
+/*------	.main						----------*/
+/*------		.title					----------*/
+/*------		.dedication				----------*/
+/*------		.link1					----------*/
+/*------			.link1>div			----------*/
+/*------	.abridged					----------*/
+/*------		.topclose				----------*/
+/*------		.text					----------*/
+/*------		.link2					----------*/
+/*------	.unabridged					----------*/
+/*------		.text					----------*/
+/*------		.link3					----------*/
+/*------------------------------------------------------------------------*/
+
+/*---------------set html height to full page--------*/
+html, body
+	{
+	width: 100%;
+	height:100%;
+	margin: 0;
+	}
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*---------------Style the links---------------------*/
+a
+	{
+	text-decoration:none;
+	color:inherit;
+	}
+
+a:hover
+	{
+	font-weight:bold;
+	text-shadow: 0px 0px 5px black;
+	}
+	
+/*---------------Style the links---------------------*/
+/*---------------style text--------------------------*/
+p	/*--------main body text---------*/
+	{
+	font-size:15px;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+	line-height:1.5;
+	text-align:justify;
+	}
+
+p a
+	{
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	text-decoration-color:black;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+	}
+
+p1	/*--------main author text---------*/
+	{
+	font-size:12px;
+	font-family: Verdana, sans-serif;
+	color:black;
+	}
+
+p2	/*--------dedication text---------*/
+	{
+	font-size:20px;
+	font-family: 'Dancing Script', cursive;
+	color:black;
+	}
+p3	/*--------link box text-----------*/
+	{
+	font-size:10px;
+	font-family: Verdana, sans-serif;
+	color:black;
+	line-height:0.7;
+	margin:0;
+	}
+
+h1	/*--------Title text---------*/
+	{
+	font-size:30px;
+	font-family: Verdana, sans-serif;
+	color:black;
+	margin-bottom:10px;
+	}
+/*---------------style text--------------------------*/
+
+/*---------------Style the container-----------------*/
+.container
+	{
+	width:100%;
+	height:100%;
+	min-width:200px;
+	}
+/*---------------Style the container-----------------*/
+/*---------------Style the container image-----------*/
+.containerimage
+	{
+	width:100%;
+	height:100%;
+	/-webkit-background-image:url(https://chadhowsefitness.com/wp-content/uploads/2015/07/dreams.jpg);
+	background-image:url(https://chadhowsefitness.com/wp-content/uploads/2015/07/dreams.jpg);
+	background-size: cover;
+	background-position:right;
+	background-repeat: no-repeat;
+
+	filter: blur(5px);
+  	-webkit-filter: blur(5px);
+	}
+/*---------------Style the container image-----------*/
+
+/*---------------Style the main----------------------*/
+.main
+	{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	align-self:center;
+	/*---black transparent background---*/
+	background-color:rgba(0,0,0, 0.4);
+
+	/*---size---*/	
+	min-height:50%;
+	width:80%;
+	min-width:170px;
+
+	/*---position in center---*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+	}
+
+/*---------------Style the main----------------------*/
+/*---------------Style the title---------------------*/
+.title
+	{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	}
+
+/*---------------Style the title---------------------*/
+/*---------------Style the dedication----------------*/
+.dedication
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin-top:10px;
+	}
+/*---------------Style the dedication----------------*/
+/*---------------Style the link1---------------------*/
+.link1
+	{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:center;
+	margin-top:20px;
+	margin-bottom:20px;
+	}
+
+.link1>div
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	width:20%;
+	min-width:75px;
+	min-height:45px;
+	margin:2px;
+	padding:2px;
+	border-radius:5px;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4);
+	}
+
+/*---------------Style the link1---------------------*/
+/*---------------Style the x button------------------*/
+.topclose
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	}
+
+.topclose>div
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:30px;
+	width:30px;
+	border-radius:100%;
+	margin:5px;
+	}
+
+.topclose>div:hover
+	{
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4)
+	}
+
+/*---------------Style the x button------------------*/
+/*---------------Style the abridged------------------*/
+.abridged
+	{
+	display:flex;
+	flex-direction:column;
+	width:90%;
+	height:85%;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4);
+
+	/*---position in center---*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+	}
+/*---------------Style the abridged------------------*/
+/*---------------Style the unabridged------------------*/
+.unabridged
+	{
+	display:flex;
+	flex-direction:column;
+	width:90%;
+	height:85%;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4);
+
+	/*---position in center---*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+	}
+/*---------------Style the unabridged------------------*/
+/*---------------Style the author----------------------*/
+.author
+	{
+	display:flex;
+	flex-direction:column;
+	width:90%;
+	height:85%;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4);
+
+	/*---position in center---*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+	}
+/*---------------Style the author----------------------*/
+/*---------------Style the quotes----------------------*/
+.quotesbox
+	{
+	display:flex;
+	flex-direction:column;
+	width:90%;
+	height:85%;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4);
+
+	/*---position in center---*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+	}
+
+.quotes
+	{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:stretch;
+	justify-items:center;
+	height:100%;
+	width:100%;
+	overflow:auto;
+	}
+
+.quotes>div
+	{
+	display:flex;
+	align-items:center;
+
+	font-style:italic;
+	width:30%;
+
+	padding:10px;
+	margin:5px;
+	border-radius:5px;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.5);
+	}
+
+
+.quotes>div p
+	{
+	text-align:center;
+	}
+
+
+/*---------------Style the quotes----------------------*/
+/*---------------Style the labyrinth-------------------*/
+.labyrinth
+	{
+	display:flex;
+	flex-direction:column;
+	width:90%;
+	height:85%;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4);
+
+	/*---position in center---*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+	}
+.labyrinthquotes
+	{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	}
+
+.labyrinthquotes>div
+	{
+	display:flex;
+	align-items:center;
+	font-style:italic;
+
+	padding-right:30px;
+	}
+
+img
+	{
+	width:100%;
+	height:100%;
+	object-fit: scale-down;
+	padding:20px;
+	}
+
+/*---------------Style the labyrinth-------------------*/
+
+/*---------------Style the backstory-------------------*/
+.backstory
+	{
+	display:flex;
+	flex-direction:column;
+	width:90%;
+	height:85%;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.4);
+
+	/*---position in center---*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index:2;
+	}
+.backstoryquotes
+	{
+	display:flex;
+	flex-direction:row;
+	width:100%;
+	height:100%;
+	overflow:auto;
+	}
+
+.backstoryquotes>div
+	{
+	display:flex;
+	flex-wrap: wrap;
+	align-items:center;
+	align-content: flex-start;
+	font-style:italic;
+	padding-right:30px;
+	}
+
+/*---------------Style the backstory-------------------*/
+/*---------------Style the iframe----------------------*/
+.frame
+	{
+	display:block;
+	height:100%;
+	padding:0;
+	margin:0;
+	}
+iframe
+	{
+	height:100%;
+	width:100%;
+	}
+
+/*---------------Style the iframe----------------------*/
+/*---------------Style the text body-----------------*/
+.text
+	{
+	padding-top:50px;
+	display:flex;
+	flex-direction:column;
+	padding:30px;
+	overflow:auto;
+	}
+/*---------------Style the text body-----------------*/
+/*---------------Style the link2---------------------*/
+.link2
+	{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	align-items:center;
+	min-height:45px;
+	}
+
+.link2>div
+	{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	text-align:center;
+	width:20%;
+	min-width:75px;
+	min-height:20px;
+	margin:2px;
+	padding:2px;
+	border-radius:5px;
+
+	/*---white transparent background---*/
+	background-color:rgba(255,255,255, 0.1);
+	}
+
+.link2:hover
+	{
+	/*---white transparent background---*/
+	background-color:rgba(0,0,0, 0.1);
+	}
+
+/*---------------Style the link2---------------------*/
+/*---------------style def and tooltip---------------*/
+def
+	{
+	position: relative;
+	display: inline-block;
+	text-decoration:underline;
+	text-underline-offset: 3px;
+	text-decoration-style: dotted;
+	text-decoration-color: blue;
+	}
+
+def .tooltiptext
+	{
+	display: none;
+	/*-----visibility: hidden;-----*/
+	width: 150px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size:10px;
+	border-radius: 5px;
+	padding: 5px;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -75px;	/* half of width */
+	}
+
+def:hover
+	{
+	font-weight:bold;
+	text-shadow: 0px 0px 5px black;
+	}
+
+def:hover .tooltiptext
+	{
+	display: block;
+	/*------visibility: visible;------*/
+	opacity: 1;
+	}
+/*---------------style def and tooltip---------------*/
+/*---------------dedication and tooltip--------------*/
+dedicate
+	{
+	position: relative;
+	display: inline-block;
+	}
+dedicate .tooltiptext
+	{
+	display: none;
+	width: 200px;
+	font-size:20px;
+	font-family: 'Dancing Script', cursive;
+	color:black;
+
+	text-align: left;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	bottom:100%;
+	left: 115%;
+	margin-bottom: -25px;
+	}
+
+dedicate:hover
+	{
+	font-weight:bold;
+	text-shadow: 0px 0px 5px black;
+	}
+
+dedicate:hover .tooltiptext
+	{
+	display: block;
+	opacity: 1;
+	}
+/*---------------dedication and tooltip--------------*/
+
+
+/*---------------ANIMATION---------------------------*/
+
+
+/*---------------ANIMATION---------------------------*/
+/*---------------responsive---------------------------*/
+@-ms-viewport 
+	{
+	width: device-width;
+	}
+
+@media screen and (max-width: 480px)
+{
+
+.link2
+	{
+
+	}	
+	
+}
+
+@media screen and (max-width: 200px)
+{
+
+.link2
+	{
+	min-height:85px;
+	}	
+	
+}
