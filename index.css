@@ -1,0 +1,278 @@
+/*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557-----*/
+/*------------------------------------------------------------------------*/
+/*------.container						----------*/
+/*------	.heading					----------*/
+/*------	.projtypes					----------*/
+/*------		.resume					----------*/
+/*------		.misc					----------*/
+/*------------------------------------------------------------------------*/
+
+/*---------------set html height to full page--------*/
+html, body
+	{
+	width: 100%;
+	height:100%;
+	margin: 0;
+	overflow:hidden;
+	}
+
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*---------------Style the links---------------------*/
+a
+	{
+	text-decoration:none;
+	color:black;
+	}
+/*---------------Style the links---------------------*/
+/*---------------style text--------------------------*/
+p	/*--------name text---------*/
+	{
+	font-size:13px;
+	font-family: Verdana, sans-serif;
+	letter-spacing: 3px;
+	color:black;
+	}
+
+h1	/*--------heading---------*/
+	{
+	font-size:40px;
+	font-family: Trebuchet MS, sans-serif;
+	letter-spacing: 3px;
+	color:black;
+	text-align:center;
+	}
+
+h2	/*--------heading2---------*/
+	{
+	font-size:20px;
+	font-family: Trebuchet MS, sans-serif;
+	color:black;
+	}
+
+
+
+/*---------------style text--------------------------*/
+/*---------------style background--------------------*/
+.background
+	{
+	width:100%;
+	height:100%;
+	/-webkit-background-image:url(./Assets/images/webprojects-bg.jpg);
+	background-image:url(./Assets/images/webprojects-bg.jpg);
+	background-size: cover;
+	background-position:0% 0%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	animation-name:scroll;
+	animation-duration:60s;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	}
+
+@keyframes scroll
+	{
+	from	{background-position:0% 0%;	}
+	to	{background-position:100% 0%;	}
+	}
+	
+
+/*---------------style background--------------------*/
+/*---------------style heading-----------------------*/
+.maincontainer
+	{
+	display:flex;
+	flex-direction:column;
+
+	width:100%;
+	height:100%;
+	height: -webkit-fill-available;
+	min-height:300px;
+	height: -webkit-fill-available;	
+	/*---background-color: rgb(0,0,0,);	---*/
+	/*---background-color:rgba(0,0,0,0.2);	---*/
+	
+	position: absolute;
+	top: 0;
+	overflow:hidden;
+	}
+
+/*---------------style heading-----------------------*/
+.heading
+	{
+	height:10%;	
+	min-height:70px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	background-color: rgb(255,255,255);
+	background-color:rgba(255,255,255,0.1);
+
+	backdrop-filter: blur(10px);
+
+	border-radius:10px;
+	border: 1px solid gray;
+	margin:30px;
+	}
+
+/*---------------style heading-----------------------*/
+/*---------------style project container-------------*/
+.projcontainer
+	{
+	height:90%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	/*------background-color:silver;---*/
+	margin:0 20px 0 20px;
+	}
+/*---------------style project container-------------*/
+/*---------------style project types-----------------*/
+.projtypes
+	{
+	height:100%;
+	width:50%;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-items:center;
+	text-align:center;
+	border-radius:10px;
+	padding:0 10px 0 10px;
+	}
+/*---------------style project types-----------------*/
+/*---------------style project heading---------------*/
+.projheading
+	{
+	height:10%;
+	min-height:36px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+
+	background-color: rgb(255,255,255);
+	background-color:rgba(255,255,255,0.1);
+
+	backdrop-filter: blur(10px);
+
+	border-radius:10px;
+	border: 1px solid gray;
+	}
+/*---------------style project heading---------------*/
+
+/*---------------style projects----------------------*/
+.projects
+	{
+	height:90%;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	/*------background-color:silver;---*/
+	align-content: stretch;
+	justify-content:space-between;	
+	padding:5px 0 5px 0;
+	}
+
+.projects a
+	{
+	width:49%;
+	min-height:15px;
+	display:flex;
+	margin:5px 0 5px 0;
+
+	background-color: rgb(255,255,255);
+	background-color:rgba(255,255,255,0.1);
+
+	backdrop-filter: blur(10px);
+
+	border-radius:10px;
+	border: 1px solid gray;
+
+	justify-content: center;
+	align-items: center;
+	}
+
+.projects a:hover
+	{
+	background-color:rgba(255,255,255,0.2);
+	border: 3px solid white;
+	color:white;
+	}
+
+
+.projects a p
+	{
+	text-shadow: 0 0 5px white;
+	}
+
+/*---------------style projects----------------------*/
+/*---------------Responsive design-------------------*/
+/*---Laptop L (1024px and above)-----------------------*/
+@media only screen and (min-width: 1024px)
+{
+body
+	{
+	display:flex;
+	justify-content:center;
+	}
+
+.maincontainer
+	{
+	width:1000px;
+	}
+
+}
+/*---Mobile L (425px and down)-----------------------*/
+@media only screen and (max-width: 425px) 
+{
+h1	/*--------heading---------*/
+	{
+	font-size:30px;		/*-10 px--*/
+	}
+h2	/*--------heading2---------*/
+	{
+	font-size:16px;		/*-4 px--*/
+	}
+}
+
+
+/*---Mobile M (375px and down)-----------------------*/
+@media only screen and (max-width: 480px)
+	and (-webkit-device-pixel-ratio: 2)
+{
+p	/*--------name text---------*/
+	{
+	font-size:15px;
+	transform: rotate(-90deg);	/*--- <--use this instead of rotate:-90deg;---*/
+	}
+.projects a
+	{
+	background-color:rgba(255,255,255,0.5);
+	backdrop-filter: blur(10px);
+	}
+.projects a p
+	{
+	text-shadow: 0 0 10px gray;
+	}
+.projheading
+	{
+	background-color:rgba(255,255,255,0.5);
+	}
+.heading
+	{
+	background-color:rgba(255,255,255,0.5);
+	}
+}
