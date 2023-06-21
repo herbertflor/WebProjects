@@ -155,7 +155,6 @@ p {
 	color:white;
 	text-shadow: 0 0 5px white;
 	}
-
 /*---------------Style heading-----------------------*/
 /*---------------Responsive design-------------------*/
 /*---landscape---*/
@@ -169,7 +168,12 @@ h4 {font-size: 1.8rem;  letter-spacing: -.05rem; }
 @media only screen and (orientation: portrait)
 {
 .row3-1
-	{
-	grid-column:  auto / span 2;
-	}
+	{grid-column:  auto / span 2;}
+}
+/*---iPhone---*/
+@media only screen and (-webkit-device-pixel-ratio: 2)
+	and (-webkit-device-pixel-ratio: 3)
+{
+.row1, .row2, .row3-1
+	{background-color:rgba(255,255,255,0.5);}
 }
