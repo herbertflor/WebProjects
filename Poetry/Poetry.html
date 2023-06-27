@@ -3,11 +3,12 @@
 <head>
    <title>Poetry</title>
    <link rel="stylesheet" href="Poetry.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 
    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,7 @@
 <!----------background---------->
 <!----------container----------->
 <div class="container">
+	<!----------heading----------->
 	<div class="heading">
 		<div class="left">
 			<button id="b1">Home</button>
@@ -37,15 +39,53 @@
 				search </button>
 		</div>
 	</div>
+	<!----------END--------------->
+	<!----------webname----------->
+	<div class="webname">
+		<h>Poetry Planet</h>
+	</div>
+	<!----------END--------------->
+	<!----------middle------------>
 	<div class="middle">
+		<!----------poem of the day------------>
 		<div class="midleft">
+			<div class="midleftTitle">
+				<h6>Poem of the day</h6>
+			</div>
+			<div class="midleftPoem">
+				<div class="midleftInfo">
+					<button	class="material-symbols-outlined"
+						id="b2" title="About the Author">
+						person
+					</button>
+					<button	class="material-symbols-outlined" 
+						id="b2" title="About the Poem">
+						wysiwyg
+					</button>
+					<button	class="material-symbols-outlined"
+						id="b2" title="Interpretation">
+						lightbulb
+					</button>
+					<button	class="material-symbols-outlined"
+					id="b2" title="Related">
+						dynamic_feed
+					</button>
+					<button	class="material-symbols-outlined"
+						id="b2" title="Listen">
+						brand_awareness
+					</button>
+				</div>
+				<iframe src="./poems/The Road Not Taken.html"></iframe>
+			</div>
 		</div>
+		<!----------END------------------------>
+		<!----------quote of the day----------->
 		<div class="midright">
 			<div class="midrighttop">
 				<button id="b1"><a href="../Solitude/Solitude.html">
 					Browse by Poem
 				</a></button>
-				<button id="bm"><a href="">
+				<button id="bm2"><a href="">
 					Browse by Author
 				</a></button>
 				<button id="b1"><a href="">
@@ -53,15 +93,33 @@
 				</a></button>
 			</div>
 			<div class="midrightquote">
-				<h6>Quote of the day</h6>
-				<h3c style="text-align:center;">
-"Poetry is the rhythmical creation of beauty in words." - Edgar Allan Poe
-				</h3c>
+				<div class="midrightTitle">
+					<h6>Featured Quote</h6>
+				</div>
+
+				<iframe id="quoteIframe"></iframe>
+				
 			</div>
 		</div>
+		<!----------END------------------------>
 	</div>
 </div>
 <!----------container----------->
-     
+<script>
+	var urls = ["./quotes/Quote (1).html", "./quotes/Quote (10).html", "./quotes/Quote (11).html", "./quotes/Quote (12).html", "./quotes/Quote (13).html", "./quotes/Quote (14).html", "./quotes/Quote (15).html", "./quotes/Quote (16).html", "./quotes/Quote (17).html", "./quotes/Quote (2).html", "./quotes/Quote (3).html", "./quotes/Quote (4).html", "./quotes/Quote (5).html", "./quotes/Quote (6).html", "./quotes/Quote (7).html", "./quotes/Quote (8).html", "./quotes/Quote (9).html"];
+        var myIframe = document.getElementById("quoteIframe");
+
+        function displayRandomFile() 
+		{
+		var randomSelectedUrl = urls[Math.floor(Math.random() * urls.length)];
+		myIframe.src = randomSelectedUrl;
+		}
+
+        displayRandomFile();
+        setInterval(displayRandomFile, 20000);
+
+
+
+</script>
 </body>
 </html>
