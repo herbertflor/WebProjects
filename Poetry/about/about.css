@@ -1,0 +1,59 @@
+html	{overflow:auto;		}
+.webname
+	{	margin-bottom:5px;	}
+.middle, .midright
+	{	height:auto;	}
+
+#otherTopics
+	{	height:35px;	}
+#otherTopics h6
+	{	margin:0;	}
+#topics
+	{	column-count:1	}
+
+/*---------------RESPONSIVE--------------------------*/
+/*---tablet - landscape, 768px wide---*/
+@media only screen and (max-width: 768px) 
+{
+	.webname
+		{height:80px;	}
+
+	.middle
+		{justify-content:flex-end;}
+	.midright
+		{
+		height:150px;
+		padding-bottom:10px;
+		}
+	.midleft
+		{height:unset;	}
+	#topics
+		{ column-count:2;}
+}
+
+
+@media only screen and (max-width: 768px)
+    		and (max-height: 500px) 
+{
+	.webname
+		{height:80px;	}
+
+	.midright
+		{height:150px;	}
+}
+
+@media only screen and (max-width: 500px)
+{
+	.middle
+		{height:unset;	}
+	.midright
+		{height:250px;	}
+	#topics
+		{column-count:1}
+}
+
+@media only screen and (max-width: 320px)
+{
+	.midright
+		{height:300px;	}
+}
