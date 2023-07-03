@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <title>History</title>
-   <link rel="stylesheet" href="../Poetry.css">
-   <link rel="stylesheet" href="./about.css">
+   <title>Do Not Go Gentle Into That Goodnight</title>
+   <link rel="stylesheet" href="../poetry.css">
+   <link rel="stylesheet" href="poem.css">
 
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
@@ -16,7 +16,7 @@
 
 
 </head>
-<body  style="overflow:auto;">
+<body>
 <!----------background---------->
 <div class="background">
 </div>
@@ -29,7 +29,7 @@
 			<button id="b1"><a href="../Poetry.html">
 				Home
 			</a></button>
-			<button id="bm"><a href="./About.html">
+			<button id="bm"><a href="../about/about.html">
 				About
 			</a></button>
 		</div>
@@ -48,25 +48,17 @@
 	<!----------webname----------->
 	<div class="webname">
 		<h>Poetry Planet</h>
-		<div class="breadCrumbs">
-			<p12>
-			<a href="../Poetry.html">	Home	</a>
-			>
-			<a href="./About.html">		About	</a>
-			>
-			<a href="./history.html">	History	</a>
-			</p12>
-		</div>
+
 	</div>
 	<!----------END--------------->
-	<!----------middle------------>
-	<div class="middle">
-		<!----------poem of the day------------>
-		<div class="midleft">
-			<div class="aboutTitle">
-				<h6>History of Poetry</h6>
+	<!----------main-------------->
+	<div class="mainbody">
+		<!----------main poem------------>
+		<div class="mainPoem" id="mainPoem">
+			<div class="poemTitle" id="poemTitle">
+				<hp3>History of Poetry</hp3>
 			</div>
-			<div id="contents">
+			<div class="poemContent" id="poemContent">
 				<hp5><pre>
 Poetry, an art as old as time,
 With roots in ancient Greece, sublime.
@@ -120,43 +112,41 @@ Give it correct poem structure....<br>
 make it longer, change the style to free verse.
 					</p>
 				</div>
+
 			</div>
 		</div>
 		<!----------END------------------------>
 		<!----------quote of the day----------->
-		<div class="midright">
-			<div class="midrighttop">
-				<button id="b1"><a href="../Solitude/Solitude.html">
+		<div class="mainRightPoem">
+			<div class="mainRightLinks">
+				<button id="bt"><a href="../Solitude/Solitude.html">
 					Browse by Poem
 				</a></button>
-				<button id="bm2"><a href="">
+				<button id="bh"><a href="">
 					Browse by Author
 				</a></button>
-				<button id="b1"><a href="">
+				<button id="bh"><a href="">
 					Browse by Topic
 				</a></button>
+				<br><br>
+					<button	id="bh" class="material-symbols-outlined"
+						id="b2" title="About the Author">
+						person
+					</button>
+					<button	id="bh" class="material-symbols-outlined" 
+						id="b2" title="About the Poem">
+						wysiwyg
+					</button>
+					<button	id="bh" class="material-symbols-outlined"
+						id="b2" title="Interpretation">
+						lightbulb
+					</button>
+					<button	id="bh" class="material-symbols-outlined"
+					id="b2" title="Related">
+						dynamic_feed
+					</button>
 			</div>
-			<div class="midrightquote">
-				<div id="otherTopics">
-					<h6>Other Topics</h6>
-				<div id="topics">
-					<hp6><a href="">
-						History of Poetry		</a><br>
-					<hp6><a href="">
-						Elements and Forms of Poetry	</a><br>
-					<a href="">
-						Types of Poetry			</a><br>
-					<a href="">
-						Methods of Creating Rhythm	</a><br>
-					<a href="">
-						Metrical Pattern		</a><br>
-					<a href="">
-						How to Analyze a Poem		</a><br>
-					<a href="">
-						Poetry in Movies		</a></hp6>					
-				</div>
-				</div>
-			</div>
+
 		</div>
 		<!----------END------------------------>
 	</div>
@@ -174,6 +164,9 @@ make it longer, change the style to free verse.
 
         displayRandomFile();
         setInterval(displayRandomFile, 20000);
+
+
+
 </script>
 </body>
 </html>
