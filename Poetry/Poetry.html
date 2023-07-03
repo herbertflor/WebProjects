@@ -2,7 +2,7 @@
 <html>
 <head>
    <title>Poetry</title>
-   <link rel="stylesheet" href="Poetry.css">
+   <link rel="stylesheet" href="poetry.css">
 
    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
 
@@ -12,7 +12,6 @@
 
    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 
 </head>
 <body>
@@ -49,39 +48,23 @@
 		<h>Poetry Planet</h>
 	</div>
 	<!----------END--------------->
-	<!----------middle------------>
-	<div class="middle">
+	<!----------main-------------->
+	<div class="main">
 		<!----------poem of the day------------>
-		<div class="midleft">
-			<div class="midleftTitle">
+		<div class="mainleft">
+			<div class="mainleftTitle">
 				<h6>Poem of the day</h6>
 			</div>
-			<div class="midleftPoem">
-				<div class="midleftInfo">
-					<button	class="material-symbols-outlined"
-						id="b2" title="About the Author">
-						person
-					</button>
-					<button	class="material-symbols-outlined" 
-						id="b2" title="About the Poem">
-						wysiwyg
-					</button>
-					<button	class="material-symbols-outlined"
-						id="b2" title="Interpretation">
-						lightbulb
-					</button>
-					<button	class="material-symbols-outlined"
-					id="b2" title="Related">
-						dynamic_feed
-					</button>
-				</div>
-				<iframe src="./poems/The Road Not Taken.html"></iframe>
+			<div class="mainleftPoem">
+				<iframe id="poemIframe" src="./featured/Do Not Go Gentle Into That Good Night.html"
+					scrolling="no">
+				</iframe>
 			</div>
 		</div>
 		<!----------END------------------------>
 		<!----------quote of the day----------->
-		<div class="midright">
-			<div class="midrighttop">
+		<div class="mainright">
+			<div class="mainrighttop">
 				<button id="b1"><a href="../Solitude/Solitude.html">
 					Browse by Poem
 				</a></button>
@@ -92,8 +75,8 @@
 					Browse by Topic
 				</a></button>
 			</div>
-			<div class="midrightquote">
-				<div class="midrightTitle">
+			<div class="mainrightquote">
+				<div class="mainrightTitle">
 					<h6>Featured Quote</h6>
 				</div>
 
@@ -117,8 +100,6 @@
 
         displayRandomFile();
         setInterval(displayRandomFile, 20000);
-
-
 
 </script>
 </body>
