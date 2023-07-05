@@ -180,7 +180,7 @@ iframe
 	-webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
 	mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(transparent));
 	mask-image: linear-gradient(to bottom, black 0%, transparent 100%);
-	}
+}
 #quoteIframe
 	{
 	width:100%;
@@ -421,8 +421,10 @@ iframe
 		margin-left:0
 		}
 	.right #search
-		{margin-right:0}
-
+		{
+		flex:1;
+		margin-right:0
+		}
 }
 
 @media (max-width: 350px) 

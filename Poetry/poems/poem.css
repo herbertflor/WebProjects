@@ -16,7 +16,8 @@ html, body
 	padding:20px;
 	border-radius:5px;
 	}
-
+pre
+	{ height:unset}
 /*--
 .poemTitle
 	{height:50px;}
@@ -74,11 +75,23 @@ html, body
 		}
 	#bh	
 		{
-		margin:0 3px 0 3px;
+		margin:0 0 0 3px;
 		}
 	.mainPoem
 		{
 		width:100%;
 		}
-
 }
+@media (max-width: 350px) 
+{
+	#bh, #bt, #bb
+		{
+		font-size:12px;
+		height:55px;
+		}
+	#b2
+		{
+		font-size:24px;
+		}
+}
+		
