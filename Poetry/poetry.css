@@ -29,7 +29,6 @@ html, body
 	width:100%;
 	height:100%;
 	margin: 0;
-	overflow:auto;
 	}
 /*---------------set html height to full page--------*/
 /*---------------Req---------------------------------*/
@@ -48,6 +47,7 @@ body
 	{
 	line-height: 1.6;
 	font-family: Verdana, sans-serif;
+	overflow:auto;
 	}
 /*---------------Style the font----------------------*/
 /*---------------Style the texts---------------------*/
