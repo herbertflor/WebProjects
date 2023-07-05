@@ -1,9 +1,27 @@
 html	{overflow:auto;		}
 
-.main, mainLeft,
+.main, .mainleft
 	{	height:100%	}
+.mainright
+	{	height:unset	}
 
 #contents
 	{text-align:justify	}
 
-/*---------------RESPONSIVE--------------------------*/
+/*---------------RESPONSIVE------------------------*/
+/* Larger than tablet */
+@media (max-width: 800px) 
+{
+	.mainright
+		{
+		height:225px;
+		}
+}
+
+@media (max-width: 350px) 
+{
+	.mainright
+		{
+		height:275px;
+		}
+}
