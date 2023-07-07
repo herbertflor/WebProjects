@@ -46,6 +46,14 @@ pre
 	{
 	margin:0 0 0 3px;
 	}
+
+.poemAuthor hp5
+	{ font-size:2.0rem;	}
+
+.poemAuthor hp5:before
+	{ content:"by ";	}
+
+/*-------RESPONSIVE-------------------*/
 /* Larger than tablet */
 @media (max-width: 500px) 
 {
