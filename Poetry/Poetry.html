@@ -56,22 +56,20 @@
 				<h6>Poem of the day</h6>
 			</div>
 			<div class="mainleftPoem">
-				<iframe id="poemIframe" src="./featured/Do Not Go Gentle Into That Good Night.html"
-					scrolling="no">
-				</iframe>
+				<iframe id="poemIframe"	scrolling="no"></iframe>
 			</div>
 		</div>
 		<!----------END------------------------>
 		<!----------quote of the day----------->
 		<div class="mainright">
 			<div class="mainrighttop">
-				<button id="b1"><a href="../Solitude/Solitude.html">
+				<button id="b1"><a href="./about/byPoem.html">
 					Browse by Poem
 				</a></button>
-				<button id="bm2"><a href="">
+				<button id="bm2"><a href="./about/byAuthor.html">
 					Browse by Author
 				</a></button>
-				<button id="b1"><a href="">
+				<button id="b1"><a href="./about/byTopic.html">
 					Browse by Topic
 				</a></button>
 			</div>
@@ -101,6 +99,23 @@
         displayRandomFile();
         setInterval(displayRandomFile, 20000);
 
+	/*-----random featured poem-----*/
+
+	var urls2 = ["./featured/Do Not Go Gentle Into That Good Night.html",
+			"./featured/Into the Fray.html",
+			"./featured/The Road Not Taken.html",
+			"./featured/The Visitor.html"	]
+
+	var myIframe2 = document.getElementById("poemIframe");
+
+        function displayRandomFile2() 
+		{
+		var randomSelectedUrl2 = urls2[Math.floor(Math.random() * urls2.length)];
+		myIframe2.src = randomSelectedUrl2;
+		}
+
+        displayRandomFile2();
+        setInterval(displayRandomFile2, 100000);
 </script>
 </body>
 </html>
