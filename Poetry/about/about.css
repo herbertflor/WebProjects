@@ -37,6 +37,98 @@ tr a:hover
 	color:white;
 	}
 
+
+/*---------------style middle right accordion--------*/
+.accordioncontainer
+	{
+	display:flex;
+	flex-direction:column;
+	margin-top:50px;
+
+	font-size: 1.2rem;
+	letter-spacing: 0;
+	margin-bottom:20px;
+	}
+
+.accordion
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	background-color:#EDF2F4;
+	width:100%;
+	height:30px;
+	border-radius:unset;
+	border-bottom:1px solid black;
+	padding-left:10px;
+	
+	cursor: pointer;
+	transition: 0.4s;
+	color:black;
+	}
+
+
+.accordion:first-child
+	{
+	border-top:1px solid black;
+	}
+
+/* Add a background color to the button if it is clicked on 	---*/
+/* (add the .active class with JS), and when you move the 	---*/
+/* mouse over it (hover) 					---*/
+
+.active, .accordion:hover
+	{
+	background-color: #2B2D42;	/*--dark blue--*/
+	color:white;
+	font-weight:bold;
+	}
+
+/* Add a symbol to each button to indicate whether the	---*/
+/* collapsible content is open or closed		---*/
+
+.accordion:after 
+	{
+	content: "\002B"; /*---Unicode character for "plus" sign (+)---*/
+	font-size: 15px;
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+	}
+
+.accordion.active:after 
+	{
+	content: "\2212"; /* ---Unicode character for "minus" sign (-) ---*/
+	color:white;
+	}
+
+.panel
+	{
+	display:flex;
+	flex-direction:column;
+	padding-left:20px;
+	background-color:rgba(141, 153, 174, 0.25);
+	max-height: 0;
+	overflow: hidden;
+	transition:max-height 0.2s ease-out;
+	}
+
+.panel a:first-child
+	{margin-top:5px;}
+
+.panel a
+	{margin-bottom:5px;}
+
+.panel a:hover
+	{
+	color:#D80032;
+	font-weight:bold;
+	}
+/*---------------style middle right accordion--------*/
+
+
 /*---------------RESPONSIVE------------------------*/
 /* Larger than tablet */
 @media (max-width: 800px) 
