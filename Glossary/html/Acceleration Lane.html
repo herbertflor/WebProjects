@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel="stylesheet" href="definition.css">
+
+<title>Acceleration Lane</title>
+
+<style></style>
+</head>
+<body>
+
+<div class="main">
+<!----------main title------------------>
+	<div class="maintitle">
+		<div class="titleleft">
+			<p2>Glossary of Terms</p2>
+			<p>Second Edition<br>
+			2023</p>
+		</div>
+		<div class="titleright">
+			<div><a href="85th percentile speed.html">85th percentile speed</a></div>	<!----------INPUT-------------->
+			<div><a href="Accessibility.html">Accessibility</a></div>			<!----------INPUT-------------->
+		</div>
+		<div class="relatedcontainer" id="relatedcontainer">
+			<div class="related" id="related" onclick="showrelated()"><a href=#>Related terms</a>
+			</div>
+				
+			<div class="relatedtext" id="relatedtext" style="display:none">
+				<a href=#>aaaaaaaaaaaaaa aaaaaaaaa</a><br>
+				<a href=#>bbaaaaaaaaaaaab</a><br>
+				<a href=#>ccaaaaaaaaaaaaaaaaaaaac</a><br>
+			</div>
+		</div>	
+	</div>
+<!----------main title------------------>
+<!----------main body------------------->
+	<div class="mainbody">
+		<div class="defEng">
+			<span class="tooltiptext">Click to copy</span>
+			<div id="eng" onclick="engFunction()">
+			<!----------INPUT-------------->
+			<p0>
+			Acceleration lane
+			</p0>
+
+			<p1>
+			A speed change lane to enable a vehicle entering a road to increase its speed to merge with through traffic.
+			</p1></div>
+
+			<!----------INPUT-------------->
+		     </div>
+		     <div class="defAra">
+			<span class="tooltiptext">Click to copy</span>
+			<div  id="Ara" onclick="AraFunction()">
+			<!----------INPUT-------------->
+			<p0>
+			حارة التسارع
+			</p0>
+
+			<p1>
+			حارة مخصصة لتمكين المركبة من زيادة سرعتها مما يسمح لها بالاندماج مع حركة المرور
+			</p1></div>
+			<!----------INPUT-------------->
+		</div>
+	</div>
+
+<!----------footer---------------------->
+	<div class="footer">
+		<div><a href="../index.html">Main Page</a></div>
+		<div><a href=#>PDF version</a></div>
+		<div><a href="../Disciplines.html">Discipline</a></div>
+		<div><a href="../Glossary.html">Glossary</a></div>
+	</div>
+<!----------footer---------------------->
+<!----------END div--------------------!>
+</div>
+
+<!----------Script----------------------------------------------------!>
+<script>
+	function engFunction()		//copy english text
+	{
+		var range = document.createRange();
+		range.selectNode(document.getElementById("eng"));
+		window.getSelection().removeAllRanges(); 		// clear current selection
+		window.getSelection().addRange(range); 			// to select text
+		document.execCommand("copy");
+		window.getSelection().removeAllRanges();		// to deselect
+	}
+
+	function AraFunction()		//copy arabic text
+	{
+		var range = document.createRange();
+		range.selectNode(document.getElementById("Ara"));
+		window.getSelection().removeAllRanges(); 		// clear current selection
+		window.getSelection().addRange(range); 			// to select text
+		document.execCommand("copy");
+		window.getSelection().removeAllRanges();		// to deselect
+	}
+
+		
+	function showrelated()
+	{
+		var x = document.getElementById("relatedtext");
+		if(x.style.display === "none")
+			{
+				x.style.display = "block";
+				related.style.width="100px";
+			}
+			else
+			{
+				x.style.display = "none";
+				related.style.width="70px";
+			}
+	}
+
+</script>
+<!----------Script----------------------------------------------------!>
+
+
+
+</body>
+</html>

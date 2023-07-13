@@ -1,0 +1,257 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<title>Building</title>
+
+<!----------------Start Style---------------------------------------------->
+<style>
+/*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241-----*/
+
+/*------------------------------------------------------------------------*/
+/*------.main							----------*/
+/*------  .maintitle						----------*/
+/*------  .mainbody						----------*/
+/*------     .terminology					----------*/
+/*------	  .terminology >div	--terminology >div:hover----------*/
+/*------	      .termsleftbox	--arabic		----------*/
+/*------	      .termsrightbox	--english		----------*/
+/*------  .footer						----------*/	
+/*------------------------------------------------------------------------*/
+
+/*---------------set html height to full page-----------------------------*/
+html,
+body 
+  {
+  height: 100%;
+  }
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*----------Style the body---------------------------*/
+body 
+	{
+	font-family: Calibri;
+	margin: 0;
+	}
+/*----------Style the body---------------------------*/
+/*----------Style the links--------------------------*/
+a:link
+{
+color:black;
+text-decoration: none;
+}
+
+a:hover
+{
+color:#EE6C4D;
+font-weight:bold;
+}
+
+a
+{
+color:black;
+display: inline-flex;
+}
+
+/*----------Style the links--------------------------*/
+/*----------Style text p1-p2-------------------------*/
+p2	/*---Title---*/
+	{
+	display:flex;
+	flex-wrap:wrap;
+	height:100px;
+	color:#293241;
+	font-size:35px;
+	font-family:arial;
+	font-weight:bold;
+	align-content:center;
+	justify-content:center;
+	}
+/*----------Style text p1-p2-------------------------*/
+/*----------Main container---------------------------*/
+.main
+	{  
+	display: flex;
+	flex-direction: column;
+	background-color:white;
+	height:100%;
+	width:100%;
+	}
+/*----------Main container---------------------------*/
+/*----------Main title-------------------------------*/
+.maintitle
+	{
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	height: 10%;
+	min-height:40px;
+	width:100%;
+	text-align:center;
+	justify-content: center;
+	align-content:center;
+	background-color:#98C1D9;
+	/*------#F8F8F8;-----*/	
+	}
+/*----------Main title-------------------------------*/
+/*----------Main body--------------------------------*/
+.mainbody
+	{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	height:100%;
+	width:100%;
+	justify-content: flex-start;
+	align-content:center;
+	overflow:auto;
+	overflow-x:hidden;
+	}	
+/*----------Main body--------------------------------*/
+/*----------terminology container--------------------*/
+.terminology
+	{
+	display:flex;
+	flex-direction:column;
+	}
+/*----------terminology container--------------------*/
+/*----------terminology container div----------------*/
+.terminology >div
+	{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	width:100%;
+	background-color:white;
+	justify-content:center;
+	padding:5px;
+	}
+/*----------terminology container div----------------*/
+/*----------terminology container hover--------------*/
+.terminology >div:hover
+	{
+	background-color:#98C1D9;
+	font-size:150%;
+	font-weight:bold;
+	color:#EE6C4D;
+	}
+/*----------terminology container hover--------------*/
+/*----------terms left column division---------------*/
+.termsleftbox		/*-------arabic--------------*/
+	{
+	flex:50%;
+	text-align:right;
+	padding:5px;
+	margin-right:5px;
+	min-width:300px;
+	font-family:Segoe UI;
+	}
+/*----------terms left column division---------------*/
+/*----------terms right column division--------------*/
+.termsrightbox		/*-------engllish------------*/
+	{
+	flex:50%;
+	text-align:left;
+	padding:5px;
+	margin-left:5px;
+	min-width:300px;
+	}
+/*----------terms right column division--------------*/
+
+
+/*----------footer-----------------------------------*/
+.footer
+	{
+	display:flex;
+	background-color:#98C1D9;
+	justify-content:center;
+	height:50px;
+	}
+
+.footer >div
+	{
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#E0FBFC;
+	justify-content:center;
+	align-content:center;
+	text-align:center;
+	flex-basis:180px;
+	min-width:100px;
+	/*------width:200px;--------*/
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:10px;
+	margin-left:10px;
+	border-radius:5px;
+	}
+
+.footer >div:hover
+	{
+	font-size:120%;
+	}
+/*----------footer---------------------*/
+</style>
+<!----End Style----------------------------------------------------------->
+</head>
+<body>
+
+<div class="main">
+<!----------main title----------------->
+	<div class="maintitle">
+		<p2>Building</p2>
+	</div>
+<!----------main title----------------->
+<!----------main body------------------>
+	<div class="mainbody">
+		<div class="terminology">
+
+			<div><a href="./html/Active cooling.html"><div class="termsleftbox">التبريد النشط </div><a href="./html/Active cooling.html"><div class="termsrightbox">Active cooling</div></a></div>
+			<div><a href="./html/Affection plan/site plan/krooki.html"><div class="termsleftbox">مخطط قطعة الأرض</div><a href="./html/Affection plan/site plan/krooki.html"><div class="termsrightbox">Affection plan/site plan/krooki</div></a></div>
+			<div><a href="./html/Allotted plot (Parcel - Property).html"><div class="termsleftbox">أرض صادر عليها سند ملكية</div><a href="./html/Allotted plot (Parcel - Property).html"><div class="termsrightbox">Allotted plot (Parcel - Property)</div></a></div>
+			<div><a href="./html/Appraisal/real estate appraisal.html"><div class="termsleftbox">التثمين</div><a href="./html/Appraisal/real estate appraisal.html"><div class="termsrightbox">Appraisal/real estate appraisal</div></a></div>
+			<div><a href="./html/Building Coverage Percentage (BCP).html"><div class="termsleftbox">نسبة البناء</div><a href="./html/Building Coverage Percentage (BCP).html"><div class="termsrightbox">Building Coverage Percentage (BCP)</div></a></div>
+			<div><a href="./html/Building height.html"><div class="termsleftbox">ارتفاع المبنى </div><a href="./html/Building height.html"><div class="termsrightbox">Building height</div></a></div>
+			<div><a href="./html/Building limit.html"><div class="termsleftbox">خط البناء</div><a href="./html/Building limit.html"><div class="termsrightbox">Building limit</div></a></div>
+			<div><a href="./html/Building permit .html"><div class="termsleftbox">رخصة بناء </div><a href="./html/Building permit .html"><div class="termsrightbox">Building permit </div></a></div>
+			<div><a href="./html/Building regulation.html"><div class="termsleftbox">اشتراطات المبنى</div><a href="./html/Building regulation.html"><div class="termsrightbox">Building regulation</div></a></div>
+			<div><a href="./html/Built-Up Area (BUA).html"><div class="termsleftbox">المساحة المبنية</div><a href="./html/Built-Up Area (BUA).html"><div class="termsrightbox">Built-Up Area (BUA)</div></a></div>
+			<div><a href="./html/Control systems.html"><div class="termsleftbox">أنظمة التحكم  </div><a href="./html/Control systems.html"><div class="termsrightbox">Control systems</div></a></div>
+			<div><a href="./html/Cooling load.html"><div class="termsleftbox">حمل نظام التبريد  </div><a href="./html/Cooling load.html"><div class="termsrightbox">Cooling load</div></a></div>
+			<div><a href="./html/Existing building .html"><div class="termsleftbox">بناء قائم</div><a href="./html/Existing building .html"><div class="termsrightbox">Existing building </div></a></div>
+			<div><a href="./html/Fence.html"><div class="termsleftbox">سياج </div><a href="./html/Fence.html"><div class="termsrightbox">Fence</div></a></div>
+			<div><a href="./html/Floor Area Ratio (FAR).html"><div class="termsleftbox">معامل /نسبة المساحة الطابقية</div><a href="./html/Floor Area Ratio (FAR).html"><div class="termsrightbox">Floor Area Ratio (FAR)</div></a></div>
+			<div><a href="./html/Gross Floor Area (GFA).html"><div class="termsleftbox">المساحة الإجمالية الطابقية (GFA)</div><a href="./html/Gross Floor Area (GFA).html"><div class="termsrightbox">Gross Floor Area (GFA)</div></a></div>
+			<div><a href="./html/Licensed entrance .html"><div class="termsleftbox">مدخل مرخص </div><a href="./html/Licensed entrance .html"><div class="termsrightbox">Licensed entrance </div></a></div>
+			<div><a href="./html/Passive cooling.html"><div class="termsleftbox">التبريد السلبي </div><a href="./html/Passive cooling.html"><div class="termsrightbox">Passive cooling</div></a></div>
+			<div><a href="./html/Photovoltaic (PV).html"><div class="termsleftbox">الكهروضوئية </div><a href="./html/Photovoltaic (PV).html"><div class="termsrightbox">Photovoltaic (PV)</div></a></div>
+			<div><a href="./html/Plot coverage (Building coverage).html"><div class="termsleftbox">نسبة المساحة المغطاة (تغطية المباني)</div><a href="./html/Plot coverage (Building coverage).html"><div class="termsrightbox">Plot coverage (Building coverage)</div></a></div>
+			<div><a href="./html/Retaining wall.html"><div class="termsleftbox">حائط إستنادي </div><a href="./html/Retaining wall.html"><div class="termsrightbox">Retaining wall</div></a></div>
+			<div><a href="./html/Setback.html"><div class="termsleftbox">ارتداد </div><a href="./html/Setback.html"><div class="termsrightbox">Setback</div></a></div>
+			<div><a href="./html/Solar Reflectance Index (SRI).html"><div class="termsleftbox">مؤشر الانعكاس الشمسي </div><a href="./html/Solar Reflectance Index (SRI).html"><div class="termsrightbox">Solar Reflectance Index (SRI)</div></a></div>
+
+		</div>	<!------end terminology----------->
+	</div>	<!--------------end main body------------->
+
+
+<!----------footer--------------------->
+	<div class="footer">
+		<div><a href="index.html">Main Page</a></div>
+		<div><a href=#>PDF version</a></div>
+		<div><a href="Disciplines.html">Discipline</a></div>
+		<div><a href="Glossary.html">Glossary</a></div>
+	</div>
+<!----------footer--------------------->
+<!----------END div--------------------!>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,341 @@
+ /*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241-----*/
+
+/*------------------------------------------------------------------------*/
+/*------.main							----------*/
+/*------	.maintitle					----------*/
+/*------		.titleleft				----------*/
+/*------		.titleright				----------*/
+/*------			>div	----->  div:hover	----------*/
+/*------		.relatedcontainer			----------*/
+/*------			.related			----------*/
+/*------			.relatedtext			----------*/
+/*------	.mainbody					----------*/
+/*------	    .mainleft					----------*/
+/*------		.defEng			--english	----------*/
+/*------		.defAra			--arabic	----------*/
+/*------	.footer						----------*/	
+/*------------------------------------------------------------------------*/
+/*---------------set html height to full page-----------------------------*/
+html,
+body 
+  {
+  height: 100%;
+  }
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*----------Style the body---------------------------*/
+body 
+	{
+	font-family: Calibri;
+	margin: 0;
+	}
+/*----------Style the body---------------------------*/
+/*----------Style the links--------------------------*/
+a:link
+{
+color:black;
+text-decoration: none;
+}
+
+a:hover
+{
+color:#EE6C4D;
+font-weight:bold;
+}
+
+a
+{
+color:black;
+display: inline-flex;
+}
+/*----------Style the links--------------------------*/
+/*----------Style tooltips Eng-----------------------*/
+.defEng .tooltiptext 
+	{
+	visibility: hidden;
+	width:60px;
+	color: gray;
+	font-size:10px;
+	/* Position the tooltip */
+	position: fixed;
+	z-index: 1;
+	}
+
+.defEng .tooltiptext::after 
+	{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent gray;
+	}
+
+.defEng:hover .tooltiptext 
+	{
+	visibility: visible;
+	}
+/*----------Style tooltips Ara-----------------------*/
+.defAra .tooltiptext 
+	{
+	visibility: hidden;
+	width:60px;
+	color: gray;
+	font-size:10px;
+	/* Position the tooltip */
+	position: fixed;
+	z-index: 1;
+	}
+
+.defAra .tooltiptext::after 
+	{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent gray;
+	}
+
+.defAra:hover .tooltiptext 
+	{
+  	visibility: visible;
+	}
+/*----------Style tooltips---------------------------*/
+/*----------Style text p1-p2-------------------------*/
+p	{
+	padding-left:10px;
+	display:flex;
+	align-items:center;
+	font-size:10px;
+	}
+p0	/*---terminology--*/
+	{
+	display:flex;
+	justify-content:center;
+	font-size:50px;
+	}
+p1	/*---definition---*/
+	{
+	padding-left:10px;
+	display:flex;
+	align-items:center;
+	text-align:justify;
+	text-justify:inter-word;
+	font-size:20px;
+	}
+
+p2	/*---Title--------*/
+	{
+	display:flex;
+	flex-wrap:wrap;
+	height:100px;
+	color:#293241;
+	font-size:35px;
+	font-family:arial;
+	font-weight:bold;
+	align-content:center;
+	justify-content:center;
+	}
+/*----------Style text p1-p2-------------------------*/
+/*----------Main container---------------------------*/
+.main
+	{  
+	display: flex;
+	flex-direction: column;
+	background-color:white;
+	height:100%;
+	width:100%;
+	}
+/*----------Main container---------------------------*/
+/*----------Main title-------------------------------*/
+.maintitle
+	{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	height: 10%;
+	min-height:60px;
+	width:100%;
+	min-width:300px;
+	align-content:center;
+	background-color:#F8F8F8;
+	z-index:1;
+	}
+/*----------Main title-------------------------------*/
+/*----------Title left-------------------------------*/
+.titleleft
+	{
+	display: flex;
+	flex-wrap:wrap;
+	width:80%;
+	min-width:400px;
+	justify-content: flex-start;
+	padding-left:10px;
+	align-content:center;
+	/*------#F8F8F8;-----*/	
+	}
+/*----------Title left-------------------------------*/
+/*----------Title right------------------------------*/
+.titleright
+	{
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	width:20%;
+	min-width:225px;
+	justify-content: center;
+	align-content:flex-end;
+	}
+
+.titleright >div
+	{
+	display:flex;
+	width:200px;
+	justify-content:right;
+	background-color:#98C1D9;
+	border-radius: 5px;
+	text-align:right;
+	margin:2px;
+	padding:2px;
+	padding-right:10px;
+	/*---margin-right:10px;----*/
+	}
+
+.titleright >div:hover
+	{
+	font-size:125%;
+	font-weight:bold;
+	}
+/*----------Title right------------------------------*/
+/*----------Title Related container------------------*/
+.relatedcontainer
+	{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	justify-content: flex-start;
+	}
+/*----------Title Related container------------------*/
+/*----------Title Related----------------------------*/
+.related
+	{
+	display:flex;
+	flex-direction:column;
+	width:70px;
+	margin:5px;
+	padding:2px;
+	text-align:center;
+	background-color:#98C1D9;
+	border-radius: 5px;
+	height:50px;
+	}
+
+.related:hover
+	{
+	font-size:125%;
+	font-weight:bold;
+	}
+
+.relatedtext
+	{
+	flex-direction:column;
+	width:100px;
+	padding:5px;
+	text-align:center;
+	background-color:#98C1D9;
+	border-radius: 5px;
+	font-size:12px;
+	}
+
+.relatedtext:hover
+	{
+	font-weight:bold;
+	}
+
+/*----------Title Related----------------------------*/
+/*----------Main body--------------------------------*/
+.mainbody
+	{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	height:100%;
+	min-height:300px;
+	width:100%;
+	align-items:center;
+	justify-content:space-evenly;
+	}	
+/*----------Main body--------------------------------*/
+/*----------defEng-----------------------------------*/
+.defEng
+	{
+	display:flex;
+	border-radius:30px;
+	padding:30px;
+	}
+
+.defEng:hover
+	{
+	box-shadow: 5px 10px 20px silver;
+	}
+	
+/*----------defEng-----------------------------------*/
+/*----------defAra-----------------------------------*/
+.defAra
+	{
+	display:flex;	
+	font-family:Segoe UI;
+	border-radius:30px;
+	padding:30px;
+	direction: rtl;
+	}
+
+.defAra:hover
+	{
+	box-shadow: 5px 10px 20px silver;
+	}	
+/*----------defAra-----------------------------------*/
+
+/*----------footer-----------------------------------*/
+.footer
+	{
+	display:flex;
+	background-color:#98C1D9;
+	/*------#8F8F8;------*/
+	justify-content:center;
+	height:50px;
+	}
+
+.footer >div
+	{
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#E0FBFC;
+	justify-content:center;
+	align-content:center;
+	text-align:center;
+	flex-basis:180px;
+	min-width:100px;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:10px;
+	margin-left:10px;
+	border-radius:5px;
+	}
+
+.footer >div:hover
+	{
+	font-size:120%;
+	}
+/*----------footer---------------------*/

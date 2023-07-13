@@ -1,0 +1,295 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<title>Roads</title>
+
+<!----------------Start Style---------------------------------------------->
+<style>
+/*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241-----*/
+
+/*------------------------------------------------------------------------*/
+/*------.main							----------*/
+/*------  .maintitle						----------*/
+/*------  .mainbody						----------*/
+/*------     .terminology					----------*/
+/*------	  .terminology >div	--terminology >div:hover----------*/
+/*------	      .termsleftbox	--arabic		----------*/
+/*------	      .termsrightbox	--english		----------*/
+/*------  .footer						----------*/	
+/*------------------------------------------------------------------------*/
+
+/*---------------set html height to full page-----------------------------*/
+html,
+body 
+  {
+  height: 100%;
+  }
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*----------Style the body---------------------------*/
+body 
+	{
+	font-family: Calibri;
+	margin: 0;
+	}
+/*----------Style the body---------------------------*/
+/*----------Style the links--------------------------*/
+a:link
+{
+color:black;
+text-decoration: none;
+}
+
+a:hover
+{
+color:#EE6C4D;
+font-weight:bold;
+}
+
+a
+{
+color:black;
+display: inline-flex;
+}
+
+/*----------Style the links--------------------------*/
+/*----------Style text p1-p2-------------------------*/
+p2	/*---Title---*/
+	{
+	display:flex;
+	flex-wrap:wrap;
+	height:100px;
+	color:#293241;
+	font-size:35px;
+	font-family:arial;
+	font-weight:bold;
+	align-content:center;
+	justify-content:center;
+	}
+/*----------Style text p1-p2-------------------------*/
+/*----------Main container---------------------------*/
+.main
+	{  
+	display: flex;
+	flex-direction: column;
+	background-color:white;
+	height:100%;
+	width:100%;
+	}
+/*----------Main container---------------------------*/
+/*----------Main title-------------------------------*/
+.maintitle
+	{
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	height: 10%;
+	min-height:40px;
+	width:100%;
+	text-align:center;
+	justify-content: center;
+	align-content:center;
+	background-color:#98C1D9;
+	/*------#F8F8F8;-----*/	
+	}
+/*----------Main title-------------------------------*/
+/*----------Main body--------------------------------*/
+.mainbody
+	{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	height:100%;
+	width:100%;
+	justify-content: flex-start;
+	align-content:center;
+	overflow:auto;
+	overflow-x:hidden;
+	}	
+/*----------Main body--------------------------------*/
+/*----------terminology container--------------------*/
+.terminology
+	{
+	display:flex;
+	flex-direction:column;
+	}
+/*----------terminology container--------------------*/
+/*----------terminology container div----------------*/
+.terminology >div
+	{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	width:100%;
+	background-color:white;
+	justify-content:center;
+	padding:5px;
+	}
+/*----------terminology container div----------------*/
+/*----------terminology container hover--------------*/
+.terminology >div:hover
+	{
+	background-color:#98C1D9;
+	font-size:150%;
+	font-weight:bold;
+	color:#EE6C4D;
+	}
+/*----------terminology container hover--------------*/
+/*----------terms left column division---------------*/
+.termsleftbox		/*-------arabic--------------*/
+	{
+	flex:50%;
+	text-align:right;
+	padding:5px;
+	margin-right:5px;
+	min-width:300px;
+	font-family:Segoe UI;
+	}
+/*----------terms left column division---------------*/
+/*----------terms right column division--------------*/
+.termsrightbox		/*-------engllish------------*/
+	{
+	flex:50%;
+	text-align:left;
+	padding:5px;
+	margin-left:5px;
+	min-width:300px;
+	}
+/*----------terms right column division--------------*/
+
+
+/*----------footer-----------------------------------*/
+.footer
+	{
+	display:flex;
+	background-color:#98C1D9;
+	justify-content:center;
+	height:50px;
+	}
+
+.footer >div
+	{
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#E0FBFC;
+	justify-content:center;
+	align-content:center;
+	text-align:center;
+	flex-basis:180px;
+	min-width:100px;
+	/*------width:200px;--------*/
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:10px;
+	margin-left:10px;
+	border-radius:5px;
+	}
+
+.footer >div:hover
+	{
+	font-size:120%;
+	}
+/*----------footer---------------------*/
+</style>
+<!----End Style----------------------------------------------------------->
+</head>
+<body>
+
+<div class="main">
+<!----------main title----------------->
+	<div class="maintitle">
+		<p2>Roads</p2>
+	</div>
+<!----------main title----------------->
+<!----------main body------------------>
+	<div class="mainbody">
+		<div class="terminology">
+
+			<div><a href="./html/Acceleration lane.html"><div class="termsleftbox">حارة التسارع</div><a href="./html/Acceleration lane.html"><div class="termsrightbox">Acceleration lane</div></a></div>
+			<div><a href="./html/Angled Parking.html"><div class="termsleftbox">موقف زاوية</div><a href="./html/Angled Parking.html"><div class="termsrightbox">Angled Parking</div></a></div>
+			<div><a href="./html/Arterial Road / Boulevard.html"><div class="termsleftbox">طريق شرياني / رئيسي  </div><a href="./html/Arterial Road / Boulevard.html"><div class="termsrightbox">Arterial Road / Boulevard</div></a></div>
+			<div><a href="./html/Auxiliary lane.html"><div class="termsleftbox">حارة مرور</div><a href="./html/Auxiliary lane.html"><div class="termsrightbox">Auxiliary lane</div></a></div>
+			<div><a href="./html/Buffer lane.html"><div class="termsleftbox">حرم الحارة</div><a href="./html/Buffer lane.html"><div class="termsrightbox">Buffer lane</div></a></div>
+			<div><a href="./html/Bump Out.html"><div class="termsleftbox">المنطقة المضافة لمسارات المشاه بشكل استثنائي</div><a href="./html/Bump Out.html"><div class="termsrightbox">Bump Out</div></a></div>
+			<div><a href="./html/Bus layby.html"><div class="termsleftbox">موقف الحافلات</div><a href="./html/Bus layby.html"><div class="termsrightbox">Bus layby</div></a></div>
+			<div><a href="./html/Carriageway.html"><div class="termsleftbox">الحارة المرورية </div><a href="./html/Carriageway.html"><div class="termsrightbox">Carriageway</div></a></div>
+			<div><a href="./html/Centerline.html"><div class="termsleftbox">الخط الوسطي للطريق</div><a href="./html/Centerline.html"><div class="termsrightbox">Centerline</div></a></div>
+			<div><a href="./html/Cloverleaf interchange.html"><div class="termsleftbox">تقاطع ورقة البرسيم</div><a href="./html/Cloverleaf interchange.html"><div class="termsrightbox">Cloverleaf interchange</div></a></div>
+			<div><a href="./html/Collector road.html"><div class="termsleftbox">طريق تجميعي</div><a href="./html/Collector road.html"><div class="termsrightbox">Collector road</div></a></div>
+			<div><a href="./html/Completion certificate.html"><div class="termsleftbox">شهادة إتمام</div><a href="./html/Completion certificate.html"><div class="termsrightbox">Completion certificate</div></a></div>
+			<div><a href="./html/Cross-Intersection.html"><div class="termsleftbox">التقطاع الرباعي</div><a href="./html/Cross-Intersection.html"><div class="termsrightbox">Cross-Intersection</div></a></div>
+			<div><a href="./html/Crosswalk.html"><div class="termsleftbox">معبر المشاة </div><a href="./html/Crosswalk.html"><div class="termsrightbox">Crosswalk</div></a></div>
+			<div><a href="./html/Cul-de-sac.html"><div class="termsleftbox">زقاق \ طريق ضيق</div><a href="./html/Cul-de-sac.html"><div class="termsrightbox">Cul-de-sac</div></a></div>
+			<div><a href="./html/Curvilinear road.html"><div class="termsleftbox">طريق منحني</div><a href="./html/Curvilinear road.html"><div class="termsrightbox">Curvilinear road</div></a></div>
+			<div><a href="./html/Cycle lane.html"><div class="termsleftbox">ممر الدراجات </div><a href="./html/Cycle lane.html"><div class="termsrightbox">Cycle lane</div></a></div>
+			<div><a href="./html/Cycle track.html"><div class="termsleftbox">مسار الدراجات </div><a href="./html/Cycle track.html"><div class="termsrightbox">Cycle track</div></a></div>
+			<div><a href="./html/Cycling facility.html"><div class="termsleftbox">مرافق ركوب الدراجات الهوائية</div><a href="./html/Cycling facility.html"><div class="termsrightbox">Cycling facility</div></a></div>
+			<div><a href="./html/Deceleration lane.html"><div class="termsleftbox">حارة التباطؤ</div><a href="./html/Deceleration lane.html"><div class="termsrightbox">Deceleration lane</div></a></div>
+			<div><a href="./html/Diamond interchange.html"><div class="termsleftbox">تقاطع ماسي</div><a href="./html/Diamond interchange.html"><div class="termsrightbox">Diamond interchange</div></a></div>
+			<div><a href="./html/Driveway.html"><div class="termsleftbox">طريق خاص</div><a href="./html/Driveway.html"><div class="termsrightbox">Driveway</div></a></div>
+			<div><a href="./html/Dumbbell intersection.html"><div class="termsleftbox">تقاطع الدمبل</div><a href="./html/Dumbbell intersection.html"><div class="termsrightbox">Dumbbell intersection</div></a></div>
+			<div><a href="./html/Easement.html"><div class="termsleftbox">0</div><a href="./html/Easement.html"><div class="termsrightbox">Easement</div></a></div>
+			<div><a href="./html/Expressway.html"><div class="termsleftbox">طرق سريعة عابرة</div><a href="./html/Expressway.html"><div class="termsrightbox">Expressway</div></a></div>
+			<div><a href="./html/Freeway.html"><div class="termsleftbox">طريق سريع</div><a href="./html/Freeway.html"><div class="termsrightbox">Freeway</div></a></div>
+			<div><a href="./html/Grade-separation.html"><div class="termsleftbox">تقاطع ذو أكثر من مستوى</div><a href="./html/Grade-separation.html"><div class="termsrightbox">Grade-separation</div></a></div>
+			<div><a href="./html/Highway.html"><div class="termsleftbox">الطريق السريع</div><a href="./html/Highway.html"><div class="termsrightbox">Highway</div></a></div>
+			<div><a href="./html/Local Authority.html"><div class="termsleftbox">السلطة المحلية</div><a href="./html/Local Authority.html"><div class="termsrightbox">Local Authority</div></a></div>
+			<div><a href="./html/Local road / Street.html"><div class="termsleftbox">طريق محلي</div><a href="./html/Local road / Street.html"><div class="termsrightbox">Local road / Street</div></a></div>
+			<div><a href="./html/L-shape road.html"><div class="termsleftbox">طريق على شكل حرف L</div><a href="./html/L-shape road.html"><div class="termsrightbox">L-shape road</div></a></div>
+			<div><a href="./html/Main line.html"><div class="termsleftbox">الحارة الرئيسية</div><a href="./html/Main line.html"><div class="termsrightbox">Main line</div></a></div>
+			<div><a href="./html/Master development.html"><div class="termsleftbox">تطوير المخطط العام</div><a href="./html/Master development.html"><div class="termsrightbox">Master development</div></a></div>
+			<div><a href="./html/Municipality Procedures.html"><div class="termsleftbox">إجراءات البلدية</div><a href="./html/Municipality Procedures.html"><div class="termsrightbox">Municipality Procedures</div></a></div>
+			<div><a href="./html/Off-ramp.html"><div class="termsleftbox">منحدر خروج</div><a href="./html/Off-ramp.html"><div class="termsrightbox">Off-ramp</div></a></div>
+			<div><a href="./html/Off-street Parking.html"><div class="termsleftbox">وقوف السيارات خارج الطريق</div><a href="./html/Off-street Parking.html"><div class="termsrightbox">Off-street Parking</div></a></div>
+			<div><a href="./html/On-ramp.html"><div class="termsleftbox">منحدر دخول</div><a href="./html/On-ramp.html"><div class="termsrightbox">On-ramp</div></a></div>
+			<div><a href="./html/On-street Parking.html"><div class="termsleftbox">وقوف السيارات داخل الطريق</div><a href="./html/On-street Parking.html"><div class="termsrightbox">On-street Parking</div></a></div>
+			<div><a href="./html/Overpass.html"><div class="termsleftbox">ممر علوي (جسر)</div><a href="./html/Overpass.html"><div class="termsrightbox">Overpass</div></a></div>
+			<div><a href="./html/Parallel parking.html"><div class="termsleftbox">مواقف متوازية</div><a href="./html/Parallel parking.html"><div class="termsrightbox">Parallel parking</div></a></div>
+			<div><a href="./html/Parking Area.html"><div class="termsleftbox">منطقة مخصصة لمواقف السيارات.</div><a href="./html/Parking Area.html"><div class="termsrightbox">Parking Area</div></a></div>
+			<div><a href="./html/Parking lane.html"><div class="termsleftbox">حارة وقوف السيارات</div><a href="./html/Parking lane.html"><div class="termsrightbox">Parking lane</div></a></div>
+			<div><a href="./html/Pedestrian crossing.html"><div class="termsleftbox">ممر خاص لعبور المشاة</div><a href="./html/Pedestrian crossing.html"><div class="termsrightbox">Pedestrian crossing</div></a></div>
+			<div><a href="./html/Private road.html"><div class="termsleftbox">طريق خاص</div><a href="./html/Private road.html"><div class="termsrightbox">Private road</div></a></div>
+			<div><a href="./html/Right-of-way (ROW).html"><div class="termsleftbox">حدود الطريق</div><a href="./html/Right-of-way (ROW).html"><div class="termsrightbox">Right-of-way (ROW)</div></a></div>
+			<div><a href="./html/Road.html"><div class="termsleftbox">طريق</div><a href="./html/Road.html"><div class="termsrightbox">Road</div></a></div>
+			<div><a href="./html/ROW assets.html"><div class="termsleftbox">مكونات الطريق</div><a href="./html/ROW assets.html"><div class="termsrightbox">ROW assets</div></a></div>
+			<div><a href="./html/ROW cross-section.html"><div class="termsleftbox">قطاع عرضي للطريق</div><a href="./html/ROW cross-section.html"><div class="termsrightbox">ROW cross-section</div></a></div>
+			<div><a href="./html/ROW profile.html"><div class="termsleftbox">القطاع الطولي للطريق</div><a href="./html/ROW profile.html"><div class="termsrightbox">ROW profile</div></a></div>
+			<div><a href="./html/ROW space.html"><div class="termsleftbox">0</div><a href="./html/ROW space.html"><div class="termsrightbox">ROW space</div></a></div>
+			<div><a href="./html/Service road.html"><div class="termsleftbox">طريق خدمة</div><a href="./html/Service road.html"><div class="termsrightbox">Service road</div></a></div>
+			<div><a href="./html/Shared lane / Mixed traffic facility.html"><div class="termsleftbox">مسار حركة مشترك / مرافق حركة المرور المختلطة </div><a href="./html/Shared lane / Mixed traffic facility.html"><div class="termsrightbox">Shared lane / Mixed traffic facility</div></a></div>
+			<div><a href="./html/Sidewalk.html"><div class="termsleftbox">الرصيف </div><a href="./html/Sidewalk.html"><div class="termsrightbox">Sidewalk</div></a></div>
+			<div><a href="./html/Street.html"><div class="termsleftbox">شارع </div><a href="./html/Street.html"><div class="termsrightbox">Street</div></a></div>
+			<div><a href="./html/T-Intersection.html"><div class="termsleftbox">تقاطع على شكل حرف T</div><a href="./html/T-Intersection.html"><div class="termsrightbox">T-Intersection</div></a></div>
+			<div><a href="./html/Traffic diversion.html"><div class="termsleftbox">تحويل حركة المرور</div><a href="./html/Traffic diversion.html"><div class="termsrightbox">Traffic diversion</div></a></div>
+			<div><a href="./html/Unbuilt roads.html"><div class="termsleftbox">طرق غير مبنية</div><a href="./html/Unbuilt roads.html"><div class="termsrightbox">Unbuilt roads</div></a></div>
+			<div><a href="./html/Unpaved road.html"><div class="termsleftbox">طريق ترابي</div><a href="./html/Unpaved road.html"><div class="termsrightbox">Unpaved road</div></a></div>
+			<div><a href="./html/Utility Corridor.html"><div class="termsleftbox">ممر البنيه التحتيه</div><a href="./html/Utility Corridor.html"><div class="termsrightbox">Utility Corridor</div></a></div>
+			<div><a href="./html/Utility Networks.html"><div class="termsleftbox">شبكات المرافق</div><a href="./html/Utility Networks.html"><div class="termsrightbox">Utility Networks</div></a></div>
+
+
+		</div>	<!------end terminology----------->
+	</div>	<!--------------end main body------------->
+
+
+<!----------footer--------------------->
+	<div class="footer">
+		<div><a href="index.html">Main Page</a></div>
+		<div><a href=#>PDF version</a></div>
+		<div><a href="Disciplines.html">Discipline</a></div>
+		<div><a href="Glossary.html">Glossary</a></div>
+	</div>
+<!----------footer--------------------->
+<!----------END div--------------------!>
+</div>
+
+
+</body>
+</html>

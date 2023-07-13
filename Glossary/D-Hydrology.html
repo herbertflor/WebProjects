@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<title>Hydrology</title>
+
+<!----------------Start Style---------------------------------------------->
+<style>
+/*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241-----*/
+
+/*------------------------------------------------------------------------*/
+/*------.main							----------*/
+/*------  .maintitle						----------*/
+/*------  .mainbody						----------*/
+/*------     .terminology					----------*/
+/*------	  .terminology >div	--terminology >div:hover----------*/
+/*------	      .termsleftbox	--arabic		----------*/
+/*------	      .termsrightbox	--english		----------*/
+/*------  .footer						----------*/	
+/*------------------------------------------------------------------------*/
+
+/*---------------set html height to full page-----------------------------*/
+html,
+body 
+  {
+  height: 100%;
+  }
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*----------Style the body---------------------------*/
+body 
+	{
+	font-family: Calibri;
+	margin: 0;
+	}
+/*----------Style the body---------------------------*/
+/*----------Style the links--------------------------*/
+a:link
+{
+color:black;
+text-decoration: none;
+}
+
+a:hover
+{
+color:#EE6C4D;
+font-weight:bold;
+}
+
+a
+{
+color:black;
+display: inline-flex;
+}
+
+/*----------Style the links--------------------------*/
+/*----------Style text p1-p2-------------------------*/
+p2	/*---Title---*/
+	{
+	display:flex;
+	flex-wrap:wrap;
+	height:100px;
+	color:#293241;
+	font-size:35px;
+	font-family:arial;
+	font-weight:bold;
+	align-content:center;
+	justify-content:center;
+	}
+/*----------Style text p1-p2-------------------------*/
+/*----------Main container---------------------------*/
+.main
+	{  
+	display: flex;
+	flex-direction: column;
+	background-color:white;
+	height:100%;
+	width:100%;
+	}
+/*----------Main container---------------------------*/
+/*----------Main title-------------------------------*/
+.maintitle
+	{
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	height: 10%;
+	min-height:40px;
+	width:100%;
+	text-align:center;
+	justify-content: center;
+	align-content:center;
+	background-color:#98C1D9;
+	/*------#F8F8F8;-----*/	
+	}
+/*----------Main title-------------------------------*/
+/*----------Main body--------------------------------*/
+.mainbody
+	{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	height:100%;
+	width:100%;
+	justify-content: flex-start;
+	align-content:center;
+	overflow:auto;
+	overflow-x:hidden;
+	}	
+/*----------Main body--------------------------------*/
+/*----------terminology container--------------------*/
+.terminology
+	{
+	display:flex;
+	flex-direction:column;
+	}
+/*----------terminology container--------------------*/
+/*----------terminology container div----------------*/
+.terminology >div
+	{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	width:100%;
+	background-color:white;
+	justify-content:center;
+	padding:5px;
+	}
+/*----------terminology container div----------------*/
+/*----------terminology container hover--------------*/
+.terminology >div:hover
+	{
+	background-color:#98C1D9;
+	font-size:150%;
+	font-weight:bold;
+	color:#EE6C4D;
+	}
+/*----------terminology container hover--------------*/
+/*----------terms left column division---------------*/
+.termsleftbox		/*-------arabic--------------*/
+	{
+	flex:50%;
+	text-align:right;
+	padding:5px;
+	margin-right:5px;
+	min-width:300px;
+	font-family:Segoe UI;
+	}
+/*----------terms left column division---------------*/
+/*----------terms right column division--------------*/
+.termsrightbox		/*-------engllish------------*/
+	{
+	flex:50%;
+	text-align:left;
+	padding:5px;
+	margin-left:5px;
+	min-width:300px;
+	}
+/*----------terms right column division--------------*/
+
+
+/*----------footer-----------------------------------*/
+.footer
+	{
+	display:flex;
+	background-color:#98C1D9;
+	justify-content:center;
+	height:50px;
+	}
+
+.footer >div
+	{
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#E0FBFC;
+	justify-content:center;
+	align-content:center;
+	text-align:center;
+	flex-basis:180px;
+	min-width:100px;
+	/*------width:200px;--------*/
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:10px;
+	margin-left:10px;
+	border-radius:5px;
+	}
+
+.footer >div:hover
+	{
+	font-size:120%;
+	}
+/*----------footer---------------------*/
+</style>
+<!----End Style----------------------------------------------------------->
+</head>
+<body>
+
+<div class="main">
+<!----------main title----------------->
+	<div class="maintitle">
+		<p2>Hydrology</p2>
+	</div>
+<!----------main title----------------->
+<!----------main body------------------>
+	<div class="mainbody">
+		<div class="terminology">
+
+			<div><a href="./html/Aquifer.html"><div class="termsleftbox">خزان جوفى</div><a href="./html/Aquifer.html"><div class="termsrightbox">Aquifer</div></a></div>
+			<div><a href="./html/Catchment area.html"><div class="termsleftbox">منطقة التجميع</div><a href="./html/Catchment area.html"><div class="termsrightbox">Catchment area</div></a></div>
+			<div><a href="./html/Catchment Management Plan (CMP).html"><div class="termsleftbox">خطة ادارة أحواض الصرف</div><a href="./html/Catchment Management Plan (CMP).html"><div class="termsrightbox">Catchment Management Plan (CMP)</div></a></div>
+			<div><a href="./html/Channel.html"><div class="termsleftbox">قناه</div><a href="./html/Channel.html"><div class="termsrightbox">Channel</div></a></div>
+			<div><a href="./html/Culvert.html"><div class="termsleftbox">عبارة</div><a href="./html/Culvert.html"><div class="termsrightbox">Culvert</div></a></div>
+			<div><a href="./html/Dam.html"><div class="termsleftbox">سد</div><a href="./html/Dam.html"><div class="termsrightbox">Dam</div></a></div>
+			<div><a href="./html/Debris screen.html"><div class="termsleftbox">مصفاة شوائب</div><a href="./html/Debris screen.html"><div class="termsrightbox">Debris screen</div></a></div>
+			<div><a href="./html/Detention pond.html"><div class="termsleftbox">بحيرة تخزين</div><a href="./html/Detention pond.html"><div class="termsrightbox">Detention pond</div></a></div>
+			<div><a href="./html/Dike / Embankment.html"><div class="termsleftbox">عقم</div><a href="./html/Dike / Embankment.html"><div class="termsrightbox">Dike / Embankment</div></a></div>
+			<div><a href="./html/Energy dissipater.html"><div class="termsleftbox">مثبطات الطاقة</div><a href="./html/Energy dissipater.html"><div class="termsrightbox">Energy dissipater</div></a></div>
+			<div><a href="./html/Erosion.html"><div class="termsleftbox">نحر</div><a href="./html/Erosion.html"><div class="termsrightbox">Erosion</div></a></div>
+			<div><a href="./html/Flood plain.html"><div class="termsleftbox">حدود الفيضان</div><a href="./html/Flood plain.html"><div class="termsrightbox">Flood plain</div></a></div>
+			<div><a href="./html/Flood sensitive area.html"><div class="termsleftbox">منطقة حساسة للفيضانات</div><a href="./html/Flood sensitive area.html"><div class="termsrightbox">Flood sensitive area</div></a></div>
+			<div><a href="./html/Gabion basket.html"><div class="termsleftbox">شبكة حجارة</div><a href="./html/Gabion basket.html"><div class="termsrightbox">Gabion basket</div></a></div>
+			<div><a href="./html/Ground water.html"><div class="termsleftbox">مياه جوفية</div><a href="./html/Ground water.html"><div class="termsrightbox">Ground water</div></a></div>
+			<div><a href="./html/Hydrology study.html"><div class="termsleftbox">الدراسة الهيدرولوجية </div><a href="./html/Hydrology study.html"><div class="termsrightbox">Hydrology study</div></a></div>
+			<div><a href="./html/Infiltration.html"><div class="termsleftbox">تسرب</div><a href="./html/Infiltration.html"><div class="termsrightbox">Infiltration</div></a></div>
+			<div><a href="./html/Inlet.html"><div class="termsleftbox">مدخل</div><a href="./html/Inlet.html"><div class="termsrightbox">Inlet</div></a></div>
+			<div><a href="./html/Invert.html"><div class="termsleftbox">قعر</div><a href="./html/Invert.html"><div class="termsrightbox">Invert</div></a></div>
+			<div><a href="./html/Lined channel.html"><div class="termsleftbox">قناة مبطنة</div><a href="./html/Lined channel.html"><div class="termsrightbox">Lined channel</div></a></div>
+			<div><a href="./html/Outlet/Outfall.html"><div class="termsleftbox">مخرج</div><a href="./html/Outlet/Outfall.html"><div class="termsrightbox">Outlet/Outfall</div></a></div>
+			<div><a href="./html/Riprap.html"><div class="termsleftbox">تدبيش</div><a href="./html/Riprap.html"><div class="termsrightbox">Riprap</div></a></div>
+			<div><a href="./html/Runoff.html"><div class="termsleftbox">جريان سطحى</div><a href="./html/Runoff.html"><div class="termsrightbox">Runoff</div></a></div>
+			<div><a href="./html/Sediment.html"><div class="termsleftbox">رواسب</div><a href="./html/Sediment.html"><div class="termsrightbox">Sediment</div></a></div>
+			<div><a href="./html/Sediment trap.html"><div class="termsleftbox">مصيدة رواسب</div><a href="./html/Sediment trap.html"><div class="termsrightbox">Sediment trap</div></a></div>
+			<div><a href="./html/Seepage.html"><div class="termsleftbox">رشح</div><a href="./html/Seepage.html"><div class="termsrightbox">Seepage</div></a></div>
+			<div><a href="./html/Spillway.html"><div class="termsleftbox">مفيض</div><a href="./html/Spillway.html"><div class="termsrightbox">Spillway</div></a></div>
+			<div><a href="./html/Stormwater Management Plan.html"><div class="termsleftbox">خطة إدارة مياه العواصف  </div><a href="./html/Stormwater Management Plan.html"><div class="termsrightbox">Stormwater Management Plan</div></a></div>
+			<div><a href="./html/Wingwall.html"><div class="termsleftbox">حائط توجيه</div><a href="./html/Wingwall.html"><div class="termsrightbox">Wingwall</div></a></div>
+
+		</div>	<!------end terminology----------->
+	</div>	<!--------------end main body------------->
+
+
+<!----------footer--------------------->
+	<div class="footer">
+		<div><a href="index.html">Main Page</a></div>
+		<div><a href=#>PDF version</a></div>
+		<div><a href="Disciplines.html">Discipline</a></div>
+		<div><a href="Glossary.html">Glossary</a></div>
+	</div>
+<!----------footer--------------------->
+<!----------END div--------------------!>
+</div>
+
+
+</body>
+</html>

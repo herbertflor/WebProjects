@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html>
+<head>
+<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glossary</title>
+
+<!----------------Start Style---------------------------------------------->
+<style>
+/*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241-----*/
+
+/*------------------------------------------------------------------------------------------------*/
+/*------.main										----------*/
+/*------	.maincol1								----------*/
+/*------		.maintitle	--blank						----------*/
+/*------		.sidebar	--alpha nav box					----------*/
+/*------		.footer		--blank						----------*/
+/*------	.maincol2								----------*/
+/*------		.maintitle							----------*/
+/*------		.mainbody							----------*/
+/*------			.termsletterhead	--alpha title			----------*/
+/*------ 			.terminology		--terminology			----------*/
+/*------				.terminology >div	--terminology >div:hover----------*/
+/*------					.termsleftbox	--arabic		----------*/
+/*------					.termsrightbox	--english		----------*/
+/*------		.footer								----------*/	
+/*------------------------------------------------------------------------------------------------*/
+
+/*---------------set html height to full page-----------------------------*/
+html,
+body 
+  {
+  height: 100%;
+  }
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*----------Style the body---------------------------*/
+body 
+	{
+	font-family: Calibri;
+	margin: 0;
+	}
+/*----------Style the body---------------------------*/
+/*----------Style the links--------------------------*/
+a:link
+{
+color:black;
+text-decoration: none;
+}
+
+a:hover
+{
+color:#EE6C4D;
+font-weight:bold;
+}
+
+a
+{
+color:black;
+display: inline-flex;
+}
+
+/*----------Style the links--------------------------*/
+/*----------Style text p1-p2-------------------------*/
+p2	/*---Title---*/
+	{
+	display:flex;
+	flex-wrap:wrap;
+	height:100px;
+	color:#293241;
+	font-size:35px;
+	font-family:arial;
+	font-weight:bold;
+	align-content:center;
+	justify-content:center;
+	}
+/*----------Style text p1-p2-------------------------*/
+/*----------Main container---------------------------*/
+.main
+	{  
+	display: flex;
+	flex-direction: row;
+	background-color:white;
+	height:100%;
+	width:100%;
+	}
+/*----------Main container---------------------------*/
+/*----------Main Col1--------------------------------*/
+.maincol1
+	{  
+	display: flex;
+	flex-direction: column;
+	background-color:gray;
+	height:100%;
+	width:50px;
+	}
+/*----------Main Col1--------------------------------*/
+/*----------Main Col2--------------------------------*/
+.maincol2
+	{  
+	display: flex;
+	flex-direction: column;
+	background-color:white;
+	height:100%;
+	width:100%;
+	}
+/*----------Main Col1--------------------------------*/
+
+/*----------Main title-------------------------------*/
+.maintitle
+	{
+	display: flex;
+	flex-direction:column;
+	flex-wrap:wrap;
+	height: 10%;
+	min-height:40px;
+	width:100%;
+	text-align:center;
+	justify-content: center;
+	align-content:center;
+	background-color:#98C1D9;
+	/*------#F8F8F8;-----*/	
+	}
+/*----------Main title-------------------------------*/
+/*----------Main body--------------------------------*/
+.mainbody
+	{
+	display:flex;
+	flex-direction:column;
+	flex-wrap:nowrap;
+	height:100%;
+	width:100%;
+	justify-content: flex-start;
+	align-items:center;
+	overflow:auto;
+	overflow-x:hidden;
+	}	
+/*----------Main body--------------------------------*/
+/*----------terminology container--------------------*/
+.terminology
+	{
+	display:flex;
+	flex-direction:column;
+	width:100%;
+	}
+/*----------terminology container--------------------*/
+/*----------terminology container div----------------*/
+.terminology >div
+	{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	width:100%;
+	background-color:white;
+	justify-content:center;
+	padding:5px;
+	}
+/*----------terminology container div----------------*/
+/*----------terminology container hover--------------*/
+.terminology >div:hover
+	{
+	background-color:#98C1D9;
+	font-size:150%;
+	font-weight:bold;
+	color:#EE6C4D;
+	}
+/*----------terminology container hover--------------*/
+/*----------terms left column division---------------*/
+.termsleftbox		/*-------arabic--------------*/
+	{
+	flex:50%;
+	text-align:right;
+	padding:5px;
+	margin-right:5px;
+	min-width:300px;
+	font-family:Segoe UI;
+	}
+/*----------terms left column division---------------*/
+/*----------terms right column division--------------*/
+.termsrightbox		/*-------engllish------------*/
+	{
+	flex:50%;
+	text-align:left;
+	padding:5px;
+	margin-left:5px;
+	min-width:300px;
+	}
+/*----------terms right column division--------------*/
+/*----------sidebar----------------------------------*/
+.sidebar
+	{
+	display:flex;
+	flex-direction:column;
+	width:50px;
+	height:100%;
+	background-color:white;
+	justify-content:space-between;
+	align-items:center;
+	text-align:center;
+	z-index: 1;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	/*------position:fixed;------*/
+	}
+/*----------sidebar----------------------------------*/
+/*----------sidebar div------------------------------*/
+.sidebar >div
+	{
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #98C1D9;
+	font-size: 12px;
+	height: 20px;
+	min-height: 5px;
+	width: 40px;
+	margin: 3px;
+	padding: 0px;
+	justify-content: center;
+	align-content: center;
+	border-radius:2px;
+	}
+/*----------sidebar div------------------------------*/
+/*----------sidebar div hover------------------------*/
+.sidebar >div:hover
+	{
+	background-color:white;
+	font-size:200%;
+	font-weight:bold;
+	}
+/*----------sidebar div hover------------------------*/
+/*----------footer-----------------------------------*/
+.footer
+	{
+	display:flex;
+	background-color:#98C1D9;
+	/*------#F8F8F8;-------*/
+	justify-content:center;
+	height:50px;
+	}
+
+.footer >div
+	{
+	display:flex;
+	flex-wrap:wrap;
+	background-color:#E0FBFC;
+	justify-content:center;
+	align-content:center;
+	text-align:center;
+	flex-basis:180px;
+	min-width:100px;
+	/*------width:200px;--------*/
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-right:10px;
+	margin-left:10px;
+	border-radius:5px;
+	}
+/*----------footer---------------------*/
+/*----------terms Letter Head----------*/
+.termsletterhead
+	{
+	display:flex;
+	text-align:center;
+	background-color:#3D5A80;
+	width:600px;
+	min-width:300px;
+	padding:5px;
+	font-family:arial;
+	font-weight:bold;
+	font-size:20px;
+	justify-content:center;
+	color:white;
+	border-radius:5px;
+	}
+/*----------terms Letter Head----------*/
+
+</style>
+<!----End Style----------------------------------------------------------->
+</head>
+<body>
+
+
+<div class="main">
+<!----------main column1--------------------------->
+	<div class="maincol1">	
+<!-------------x-maintitle-------------------------->	
+		<div class="maintitle">	
+			<p2> </p2>
+		</div>
+<!--------------Sidebar----------------------------->
+		<div class="sidebar">
+ 			<div>
+				<a href="#A">A </a>
+			</div>
+ 			<div>
+				<a href="#B">B </a>
+			</div>
+	 		<div>
+				<a href="#C">C </a>
+			</div>
+ 			<div>
+				<a href="#D">D </a>
+			</div>
+ 			<div>
+				<a href="#E">E </a>
+			</div>
+ 			<div>
+				<a href="#F">F </a>
+			</div>
+	 		<div>
+				<a href="#G">G </a>
+			</div>
+	 		<div>
+				<a href="#H">H </a>
+			</div>
+	 		<div>
+				<a href="#I">I </a>
+			</div>
+ 			<div>
+				<a href="#J">J </a>
+			</div>
+ 			<div>
+				<a href="#K">K </a>
+			</div>
+ 			<div>
+				<a href="#L">L </a>
+			</div>
+ 			<div>
+				<a href="#M">M </a>
+			</div>
+ 			<div>
+				<a href="#N">N </a>
+			</div>
+ 			<div>
+				<a href="#O">O </a>
+			</div>
+ 			<div>
+				<a href="#P">P </a>
+			</div>
+ 			<div>
+				<a href="#Q">Q </a>
+			</div>
+ 			<div>
+				<a href="#R">R </a>
+			</div>
+ 			<div>
+				<a href="#S">S </a>
+			</div>
+ 			<div>
+				<a href="#T">T </a>
+			</div>
+ 			<div>
+				<a href="#U">U </a>
+			</div>
+ 			<div>
+				<a href="#V">V </a>
+			</div>
+ 			<div>
+				<a href="#W">W </a>
+			</div>
+ 			<div>
+				<a href="#X">X </a>
+			</div>
+ 			<div>
+				<a href="#Y">Y </a>
+			</div>
+ 			<div>
+				<a href="#Z">Z </a>
+			</div>
+		</div>
+<!--------------Sidebar----------------------------->
+<!--------------x-footer---------------------------->
+		<div class="footer">
+			
+		</div>
+<!--------------x-footer---------------------------->
+	</div>
+<!----------main column1---------------------------->
+<!----------main column2---------------------------->
+	<div class="maincol2">	
+<!----------main title------------------------------>
+		<div class="maintitle">
+			<p2>Glossary</p2>
+		</div>
+<!----------main title------------------------------>
+<!----------main body------------------------------->
+	<div class="mainbody">
+<!------A__Letterhead------------------------------->
+		<div class="termsletterhead" id="A">
+			A
+		</div>
+<!------A__Letterhead------------------------------->
+<!------A__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Acceleration lane.html"><div class="termsleftbox">حارة التسارع</div><a href="./html/Acceleration lane.html"><div class="termsrightbox">Acceleration lane</div></a></div>
+			<div><a href="./html/Accessibility.html"><div class="termsleftbox">سهولة الوصول </div><a href="./html/Accessibility.html"><div class="termsrightbox">Accessibility</div></a></div>
+			<div><a href="./html/Active cooling.html"><div class="termsleftbox">التبريد النشط </div><a href="./html/Active cooling.html"><div class="termsrightbox">Active cooling</div></a></div>
+			<div><a href="./html/Adaptive species.html"><div class="termsleftbox">الفصائل المتكيفة</div><a href="./html/Adaptive species.html"><div class="termsrightbox">Adaptive species</div></a></div>
+			<div><a href="./html/Add.html"><div class="termsleftbox">اضافة</div><a href="./html/Add.html"><div class="termsrightbox">Add</div></a></div>
+			<div><a href="./html/Additional area .html"><div class="termsleftbox">مساحة إضافية </div><a href="./html/Additional area .html"><div class="termsrightbox">Additional area </div></a></div>
+			<div><a href="./html/Address / Street address.html"><div class="termsleftbox">العنوان / عنوان الشارع</div><a href="./html/Address / Street address.html"><div class="termsrightbox">Address / Street address</div></a></div>
+			<div><a href="./html/Address number.html"><div class="termsleftbox">رقم العنوان</div><a href="./html/Address number.html"><div class="termsrightbox">Address number</div></a></div>
+			<div><a href="./html/Addressable site.html"><div class="termsleftbox">موقع عنونة</div><a href="./html/Addressable site.html"><div class="termsrightbox">Addressable site</div></a></div>
+			<div><a href="./html/Addressing system.html"><div class="termsleftbox">نظام العنونة</div><a href="./html/Addressing system.html"><div class="termsrightbox">Addressing system</div></a></div>
+			<div><a href="./html/Affection plan/site plan/krooki.html"><div class="termsleftbox">مخطط قطعة الأرض</div><a href="./html/Affection plan/site plan/krooki.html"><div class="termsrightbox">Affection plan/site plan/krooki</div></a></div>
+			<div><a href="./html/Agriculture (Land Use).html"><div class="termsleftbox">الأستعمال الزراعي</div><a href="./html/Agriculture (Land Use).html"><div class="termsrightbox">Agriculture (Land Use)</div></a></div>
+			<div><a href="./html/Allotted plot (Parcel - Property).html"><div class="termsleftbox">أرض صادر عليها سند ملكية</div><a href="./html/Allotted plot (Parcel - Property).html"><div class="termsrightbox">Allotted plot (Parcel - Property)</div></a></div>
+			<div><a href="./html/Ambulance Point.html"><div class="termsleftbox">نقطة الإسعاف</div><a href="./html/Ambulance Point.html"><div class="termsrightbox">Ambulance Point</div></a></div>
+			<div><a href="./html/Angled Parking.html"><div class="termsleftbox">موقف زاوية</div><a href="./html/Angled Parking.html"><div class="termsrightbox">Angled Parking</div></a></div>
+			<div><a href="./html/Appraisal/real estate appraisal.html"><div class="termsleftbox">التثمين</div><a href="./html/Appraisal/real estate appraisal.html"><div class="termsrightbox">Appraisal/real estate appraisal</div></a></div>
+			<div><a href="./html/Approved proposal .html"><div class="termsleftbox">مقترح معتمد </div><a href="./html/Approved proposal .html"><div class="termsrightbox">Approved proposal </div></a></div>
+			<div><a href="./html/Aquifer.html"><div class="termsleftbox">خزان جوفى</div><a href="./html/Aquifer.html"><div class="termsrightbox">Aquifer</div></a></div>
+			<div><a href="./html/Archaeological site.html"><div class="termsleftbox">منطقة أثرية </div><a href="./html/Archaeological site.html"><div class="termsrightbox">Archaeological site</div></a></div>
+			<div><a href="./html/Area.html"><div class="termsleftbox">منطقة</div><a href="./html/Area.html"><div class="termsrightbox">Area</div></a></div>
+			<div><a href="./html/Arrangement / Land reassembly .html"><div class="termsleftbox">فرز</div><a href="./html/Arrangement / Land reassembly .html"><div class="termsrightbox">Arrangement / Land reassembly </div></a></div>
+			<div><a href="./html/Arterial Road / Boulevard.html"><div class="termsleftbox">طريق شرياني / رئيسي  </div><a href="./html/Arterial Road / Boulevard.html"><div class="termsrightbox">Arterial Road / Boulevard</div></a></div>
+			<div><a href="./html/Auxiliary lane.html"><div class="termsleftbox">حارة مرور</div><a href="./html/Auxiliary lane.html"><div class="termsrightbox">Auxiliary lane</div></a></div>
+			<div><a href="./html/Average Annual Daily Traffic (AADT).html"><div class="termsleftbox">متوسط ​​الحركة اليومية السنوية </div><a href="./html/Average Annual Daily Traffic (AADT).html"><div class="termsrightbox">Average Annual Daily Traffic (AADT)</div></a></div>
+
+		</div>
+<!------B__Letterhead------------------------------->
+		<div class="termsletterhead" id="B">
+			B
+		</div>
+<!------B__Letterhead------------------------------->
+<!------B__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Bioswale.html"><div class="termsleftbox">0</div><a href="./html/Bioswale.html"><div class="termsrightbox">Bioswale</div></a></div>
+			<div><a href="./html/Brief / Planning brief.html"><div class="termsleftbox">ملخص التخطيط</div><a href="./html/Brief / Planning brief.html"><div class="termsrightbox">Brief / Planning brief</div></a></div>
+			<div><a href="./html/Brownfield.html"><div class="termsleftbox">أراضي مستغلة قائمة </div><a href="./html/Brownfield.html"><div class="termsrightbox">Brownfield</div></a></div>
+			<div><a href="./html/Buffer.html"><div class="termsleftbox">منطقة حماية </div><a href="./html/Buffer.html"><div class="termsrightbox">Buffer</div></a></div>
+			<div><a href="./html/Buffer lane.html"><div class="termsleftbox">حرم الحارة</div><a href="./html/Buffer lane.html"><div class="termsrightbox">Buffer lane</div></a></div>
+			<div><a href="./html/Buffer zone.html"><div class="termsleftbox">منطقة عازلة</div><a href="./html/Buffer zone.html"><div class="termsrightbox">Buffer zone</div></a></div>
+			<div><a href="./html/Building Coverage Percentage (BCP).html"><div class="termsleftbox">نسبة البناء</div><a href="./html/Building Coverage Percentage (BCP).html"><div class="termsrightbox">Building Coverage Percentage (BCP)</div></a></div>
+			<div><a href="./html/Building height.html"><div class="termsleftbox">ارتفاع المبنى </div><a href="./html/Building height.html"><div class="termsrightbox">Building height</div></a></div>
+			<div><a href="./html/Building limit.html"><div class="termsleftbox">خط البناء</div><a href="./html/Building limit.html"><div class="termsrightbox">Building limit</div></a></div>
+			<div><a href="./html/Building permit .html"><div class="termsleftbox">رخصة بناء </div><a href="./html/Building permit .html"><div class="termsrightbox">Building permit </div></a></div>
+			<div><a href="./html/Building regulation.html"><div class="termsleftbox">اشتراطات المبنى</div><a href="./html/Building regulation.html"><div class="termsrightbox">Building regulation</div></a></div>
+			<div><a href="./html/Built-Up Area (BUA).html"><div class="termsleftbox">المساحة المبنية</div><a href="./html/Built-Up Area (BUA).html"><div class="termsrightbox">Built-Up Area (BUA)</div></a></div>
+			<div><a href="./html/Bump Out.html"><div class="termsleftbox">المنطقة المضافة لمسارات المشاه بشكل استثنائي</div><a href="./html/Bump Out.html"><div class="termsrightbox">Bump Out</div></a></div>
+			<div><a href="./html/Bus layby.html"><div class="termsleftbox">موقف الحافلات</div><a href="./html/Bus layby.html"><div class="termsrightbox">Bus layby</div></a></div>
+
+		</div>
+<!------C__Letterhead------------------------------->
+		<div class="termsletterhead" id="C">
+			C
+		</div>
+<!------C__Letterhead------------------------------->
+<!------C__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Cadastre / Land Register.html"><div class="termsleftbox">السجل العقاري</div><a href="./html/Cadastre / Land Register.html"><div class="termsrightbox">Cadastre / Land Register</div></a></div>
+			<div><a href="./html/Capacity.html"><div class="termsleftbox">السعة </div><a href="./html/Capacity.html"><div class="termsrightbox">Capacity</div></a></div>
+			<div><a href="./html/Carriageway.html"><div class="termsleftbox">الحارة المرورية </div><a href="./html/Carriageway.html"><div class="termsrightbox">Carriageway</div></a></div>
+			<div><a href="./html/Catchment area.html"><div class="termsleftbox">منطقة التجميع</div><a href="./html/Catchment area.html"><div class="termsrightbox">Catchment area</div></a></div>
+			<div><a href="./html/Catchment Management Plan (CMP).html"><div class="termsleftbox">خطة ادارة أحواض الصرف</div><a href="./html/Catchment Management Plan (CMP).html"><div class="termsrightbox">Catchment Management Plan (CMP)</div></a></div>
+			<div><a href="./html/Centerline.html"><div class="termsleftbox">الخط الوسطي للطريق</div><a href="./html/Centerline.html"><div class="termsrightbox">Centerline</div></a></div>
+			<div><a href="./html/Chamfer.html"><div class="termsleftbox">حافة مشطوبة</div><a href="./html/Chamfer.html"><div class="termsrightbox">Chamfer</div></a></div>
+			<div><a href="./html/Channel.html"><div class="termsleftbox">قناه</div><a href="./html/Channel.html"><div class="termsrightbox">Channel</div></a></div>
+			<div><a href="./html/Character.html"><div class="termsleftbox">الطابع </div><a href="./html/Character.html"><div class="termsrightbox">Character</div></a></div>
+			<div><a href="./html/Chicane.html"><div class="termsleftbox">0</div><a href="./html/Chicane.html"><div class="termsrightbox">Chicane</div></a></div>
+			<div><a href="./html/Circulation.html"><div class="termsleftbox">حركة المرور</div><a href="./html/Circulation.html"><div class="termsrightbox">Circulation</div></a></div>
+			<div><a href="./html/Civil Defense.html"><div class="termsleftbox">محطات الدفاع المدني</div><a href="./html/Civil Defense.html"><div class="termsrightbox">Civil Defense</div></a></div>
+			<div><a href="./html/Clinic (Large).html"><div class="termsleftbox">عيادة كبيرة</div><a href="./html/Clinic (Large).html"><div class="termsrightbox">Clinic (Large)</div></a></div>
+			<div><a href="./html/Clinic (Medium).html"><div class="termsleftbox">عيادة متوسطه</div><a href="./html/Clinic (Medium).html"><div class="termsrightbox">Clinic (Medium)</div></a></div>
+			<div><a href="./html/Clinic (Small).html"><div class="termsleftbox">عيادة صغيرة</div><a href="./html/Clinic (Small).html"><div class="termsrightbox">Clinic (Small)</div></a></div>
+			<div><a href="./html/Clinic (Village).html"><div class="termsleftbox">عيادة القرية</div><a href="./html/Clinic (Village).html"><div class="termsrightbox">Clinic (Village)</div></a></div>
+			<div><a href="./html/Cloverleaf interchange.html"><div class="termsleftbox">تقاطع ورقة البرسيم</div><a href="./html/Cloverleaf interchange.html"><div class="termsrightbox">Cloverleaf interchange</div></a></div>
+			<div><a href="./html/Cluster.html"><div class="termsleftbox">مجموعة سكنية</div><a href="./html/Cluster.html"><div class="termsrightbox">Cluster</div></a></div>
+			<div><a href="./html/Cluster Center.html"><div class="termsleftbox">مركز المجموعة السكنية</div><a href="./html/Cluster Center.html"><div class="termsrightbox">Cluster Center</div></a></div>
+			<div><a href="./html/Coefficient of performance.html"><div class="termsleftbox">معامل الأداء  </div><a href="./html/Coefficient of performance.html"><div class="termsrightbox">Coefficient of performance</div></a></div>
+			<div><a href="./html/Collector road.html"><div class="termsleftbox">طريق تجميعي</div><a href="./html/Collector road.html"><div class="termsrightbox">Collector road</div></a></div>
+			<div><a href="./html/Co-located Facilities.html"><div class="termsleftbox">المرافق ذات الموقع المشترك</div><a href="./html/Co-located Facilities.html"><div class="termsrightbox">Co-located Facilities</div></a></div>
+			<div><a href="./html/Commercial (Land Use).html"><div class="termsleftbox">الأستعمال التجاري</div><a href="./html/Commercial (Land Use).html"><div class="termsrightbox">Commercial (Land Use)</div></a></div>
+			<div><a href="./html/Commissioning agent.html"><div class="termsleftbox">وكيل اختبار تشغيل البنية التحتية </div><a href="./html/Commissioning agent.html"><div class="termsrightbox">Commissioning agent</div></a></div>
+			<div><a href="./html/Community centers.html"><div class="termsleftbox">المنطقة المركزية</div><a href="./html/Community centers.html"><div class="termsrightbox">Community centers</div></a></div>
+			<div><a href="./html/Community facility.html"><div class="termsleftbox">المرافق المجتمعية </div><a href="./html/Community facility.html"><div class="termsrightbox">Community facility</div></a></div>
+			<div><a href="./html/Community focal points.html"><div class="termsleftbox">نقاط التجمع</div><a href="./html/Community focal points.html"><div class="termsrightbox">Community focal points</div></a></div>
+			<div><a href="./html/Compatibility.html"><div class="termsleftbox">التوافقية </div><a href="./html/Compatibility.html"><div class="termsrightbox">Compatibility</div></a></div>
+			<div><a href="./html/Compensation.html"><div class="termsleftbox">التعويض</div><a href="./html/Compensation.html"><div class="termsrightbox">Compensation</div></a></div>
+			<div><a href="./html/Completion certificate.html"><div class="termsleftbox">شهادة إتمام</div><a href="./html/Completion certificate.html"><div class="termsrightbox">Completion certificate</div></a></div>
+			<div><a href="./html/Connectivity.html"><div class="termsleftbox">الترابط </div><a href="./html/Connectivity.html"><div class="termsrightbox">Connectivity</div></a></div>
+			<div><a href="./html/Conservation (Land Use).html"><div class="termsleftbox">الحفظ (استخدامات الأرض)</div><a href="./html/Conservation (Land Use).html"><div class="termsrightbox">Conservation (Land Use)</div></a></div>
+			<div><a href="./html/Constraint / Restriction.html"><div class="termsleftbox">المحددات والمعوقات</div><a href="./html/Constraint / Restriction.html"><div class="termsrightbox">Constraint / Restriction</div></a></div>
+			<div><a href="./html/Construction stage.html"><div class="termsleftbox">مرحلة البناء  </div><a href="./html/Construction stage.html"><div class="termsrightbox">Construction stage</div></a></div>
+			<div><a href="./html/Construction waste.html"><div class="termsleftbox">مخلفات البناء </div><a href="./html/Construction waste.html"><div class="termsrightbox">Construction waste</div></a></div>
+			<div><a href="./html/Context.html"><div class="termsleftbox">النسيج العمراني</div><a href="./html/Context.html"><div class="termsrightbox">Context</div></a></div>
+			<div><a href="./html/Control systems.html"><div class="termsleftbox">أنظمة التحكم  </div><a href="./html/Control systems.html"><div class="termsrightbox">Control systems</div></a></div>
+			<div><a href="./html/Cooling load.html"><div class="termsleftbox">حمل نظام التبريد  </div><a href="./html/Cooling load.html"><div class="termsrightbox">Cooling load</div></a></div>
+			<div><a href="./html/Corner lot.html"><div class="termsleftbox">الزاوية المنحنية</div><a href="./html/Corner lot.html"><div class="termsrightbox">Corner lot</div></a></div>
+			<div><a href="./html/Corner through lot.html"><div class="termsleftbox">قسيمة متاخمة لثلاثة شوارع</div><a href="./html/Corner through lot.html"><div class="termsrightbox">Corner through lot</div></a></div>
+			<div><a href="./html/Cross-Intersection.html"><div class="termsleftbox">التقطاع الرباعي</div><a href="./html/Cross-Intersection.html"><div class="termsrightbox">Cross-Intersection</div></a></div>
+			<div><a href="./html/Crosswalk.html"><div class="termsleftbox">معبر المشاة </div><a href="./html/Crosswalk.html"><div class="termsrightbox">Crosswalk</div></a></div>
+			<div><a href="./html/Cul-de-sac.html"><div class="termsleftbox">زقاق \ طريق ضيق</div><a href="./html/Cul-de-sac.html"><div class="termsrightbox">Cul-de-sac</div></a></div>
+			<div><a href="./html/Culvert.html"><div class="termsleftbox">عبارة</div><a href="./html/Culvert.html"><div class="termsrightbox">Culvert</div></a></div>
+			<div><a href="./html/Curb.html"><div class="termsleftbox">حاجز</div><a href="./html/Curb.html"><div class="termsrightbox">Curb</div></a></div>
+			<div><a href="./html/Curvilinear road.html"><div class="termsleftbox">طريق منحني</div><a href="./html/Curvilinear road.html"><div class="termsrightbox">Curvilinear road</div></a></div>
+			<div><a href="./html/Cycle lane.html"><div class="termsleftbox">ممر الدراجات </div><a href="./html/Cycle lane.html"><div class="termsrightbox">Cycle lane</div></a></div>
+			<div><a href="./html/Cycle track.html"><div class="termsleftbox">مسار الدراجات </div><a href="./html/Cycle track.html"><div class="termsrightbox">Cycle track</div></a></div>
+			<div><a href="./html/Cycling facility.html"><div class="termsleftbox">مرافق ركوب الدراجات الهوائية</div><a href="./html/Cycling facility.html"><div class="termsrightbox">Cycling facility</div></a></div>
+
+		</div>
+<!------D__Letterhead------------------------------->
+		<div class="termsletterhead" id="D">
+			D
+		</div>
+<!------D__Letterhead------------------------------->
+<!------D__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Dam.html"><div class="termsleftbox">سد</div><a href="./html/Dam.html"><div class="termsrightbox">Dam</div></a></div>
+			<div><a href="./html/Debris screen.html"><div class="termsleftbox">مصفاة شوائب</div><a href="./html/Debris screen.html"><div class="termsrightbox">Debris screen</div></a></div>
+			<div><a href="./html/Deceleration lane.html"><div class="termsleftbox">حارة التباطؤ</div><a href="./html/Deceleration lane.html"><div class="termsrightbox">Deceleration lane</div></a></div>
+			<div><a href="./html/Design guidelines.html"><div class="termsleftbox">دليل التصميم </div><a href="./html/Design guidelines.html"><div class="termsrightbox">Design guidelines</div></a></div>
+			<div><a href="./html/Design speed.html"><div class="termsleftbox">السرعه المحدده</div><a href="./html/Design speed.html"><div class="termsrightbox">Design speed</div></a></div>
+			<div><a href="./html/Design year.html"><div class="termsleftbox">سنة التصميم</div><a href="./html/Design year.html"><div class="termsrightbox">Design year</div></a></div>
+			<div><a href="./html/Detailed design stage.html"><div class="termsleftbox">مرحلة  المخطط التفصيلي  </div><a href="./html/Detailed design stage.html"><div class="termsrightbox">Detailed design stage</div></a></div>
+			<div><a href="./html/Detention pond.html"><div class="termsleftbox">بحيرة تخزين</div><a href="./html/Detention pond.html"><div class="termsrightbox">Detention pond</div></a></div>
+			<div><a href="./html/Developable land.html"><div class="termsleftbox">أرض قابلة للتطوير </div><a href="./html/Developable land.html"><div class="termsrightbox">Developable land</div></a></div>
+			<div><a href="./html/Development.html"><div class="termsleftbox">التنمية</div><a href="./html/Development.html"><div class="termsrightbox">Development</div></a></div>
+			<div><a href="./html/Development Proposal.html"><div class="termsleftbox">مقترح تنمية</div><a href="./html/Development Proposal.html"><div class="termsrightbox">Development Proposal</div></a></div>
+			<div><a href="./html/Diamond interchange.html"><div class="termsleftbox">تقاطع ماسي</div><a href="./html/Diamond interchange.html"><div class="termsrightbox">Diamond interchange</div></a></div>
+			<div><a href="./html/Dike / Embankment.html"><div class="termsleftbox">عقم</div><a href="./html/Dike / Embankment.html"><div class="termsrightbox">Dike / Embankment</div></a></div>
+			<div><a href="./html/District.html"><div class="termsleftbox">الحي</div><a href="./html/District.html"><div class="termsrightbox">District</div></a></div>
+			<div><a href="./html/District Center.html"><div class="termsleftbox">مركز الحي</div><a href="./html/District Center.html"><div class="termsrightbox">District Center</div></a></div>
+			<div><a href="./html/Diverge.html"><div class="termsleftbox">تشعب</div><a href="./html/Diverge.html"><div class="termsrightbox">Diverge</div></a></div>
+			<div><a href="./html/Divided road.html"><div class="termsleftbox">طريق مزدوج</div><a href="./html/Divided road.html"><div class="termsrightbox">Divided road</div></a></div>
+			<div><a href="./html/Drip irrigation.html"><div class="termsleftbox">الري بالتنقيط </div><a href="./html/Drip irrigation.html"><div class="termsrightbox">Drip irrigation</div></a></div>
+			<div><a href="./html/Driveway.html"><div class="termsleftbox">طريق خاص</div><a href="./html/Driveway.html"><div class="termsrightbox">Driveway</div></a></div>
+			<div><a href="./html/Dumbbell intersection.html"><div class="termsleftbox">تقاطع الدمبل</div><a href="./html/Dumbbell intersection.html"><div class="termsrightbox">Dumbbell intersection</div></a></div>
+
+		</div>
+<!------E__Letterhead------------------------------->
+		<div class="termsletterhead" id="E">
+			E
+		</div>
+<!------E__Letterhead------------------------------->
+<!------E__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Easement.html"><div class="termsleftbox">0</div><a href="./html/Easement.html"><div class="termsrightbox">Easement</div></a></div>
+			<div><a href="./html/Electric Vehicle (EV) charging station.html"><div class="termsleftbox">محطة شحن المركبات الكهربائية </div><a href="./html/Electric Vehicle (EV) charging station.html"><div class="termsrightbox">Electric Vehicle (EV) charging station</div></a></div>
+			<div><a href="./html/Electric Vehicle Infrastructure (EVI).html"><div class="termsleftbox">البنية التحتية للمركبات الكهربائية</div><a href="./html/Electric Vehicle Infrastructure (EVI).html"><div class="termsrightbox">Electric Vehicle Infrastructure (EVI)</div></a></div>
+			<div><a href="./html/Electric vehicle supply equipment.html"><div class="termsleftbox">معدات تغذية المركبات الكهربائية </div><a href="./html/Electric vehicle supply equipment.html"><div class="termsrightbox">Electric vehicle supply equipment</div></a></div>
+			<div><a href="./html/Electric Vehicles (EV).html"><div class="termsleftbox">المركبات الكهربائية </div><a href="./html/Electric Vehicles (EV).html"><div class="termsrightbox">Electric Vehicles (EV)</div></a></div>
+			<div><a href="./html/Emissivity.html"><div class="termsleftbox">الانبعاثية </div><a href="./html/Emissivity.html"><div class="termsrightbox">Emissivity</div></a></div>
+			<div><a href="./html/Energy dissipater.html"><div class="termsleftbox">مثبطات الطاقة</div><a href="./html/Energy dissipater.html"><div class="termsrightbox">Energy dissipater</div></a></div>
+			<div><a href="./html/Environmental Impact Assessment (EIA).html"><div class="termsleftbox">تقييم الأثر البيئي </div><a href="./html/Environmental Impact Assessment (EIA).html"><div class="termsrightbox">Environmental Impact Assessment (EIA)</div></a></div>
+			<div><a href="./html/Environmental Impact Statement (EIS).html"><div class="termsleftbox">بيان الأثر البيئي</div><a href="./html/Environmental Impact Statement (EIS).html"><div class="termsrightbox">Environmental Impact Statement (EIS)</div></a></div>
+			<div><a href="./html/Environmental sensitive areas.html"><div class="termsleftbox">المناطق البيئية الحساسة</div><a href="./html/Environmental sensitive areas.html"><div class="termsrightbox">Environmental sensitive areas</div></a></div>
+			<div><a href="./html/Erosion.html"><div class="termsleftbox">نحر</div><a href="./html/Erosion.html"><div class="termsrightbox">Erosion</div></a></div>
+			<div><a href="./html/Exercise track.html"><div class="termsleftbox">مسار التمرين </div><a href="./html/Exercise track.html"><div class="termsrightbox">Exercise track</div></a></div>
+			<div><a href="./html/Existing building .html"><div class="termsleftbox">بناء قائم</div><a href="./html/Existing building .html"><div class="termsrightbox">Existing building </div></a></div>
+			<div><a href="./html/Expressway.html"><div class="termsleftbox">طرق سريعة عابرة</div><a href="./html/Expressway.html"><div class="termsrightbox">Expressway</div></a></div>
+			<div><a href="./html/Expropriation.html"><div class="termsleftbox">نزع الملكية</div><a href="./html/Expropriation.html"><div class="termsrightbox">Expropriation</div></a></div>
+
+		</div>
+<!------F__Letterhead------------------------------->
+		<div class="termsletterhead" id="F">
+			F
+		</div>
+<!------F__Letterhead------------------------------->
+<!------F__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Facility point.html"><div class="termsleftbox">نقطة منشأة</div><a href="./html/Facility point.html"><div class="termsrightbox">Facility point</div></a></div>
+			<div><a href="./html/Federal road.html"><div class="termsleftbox">الطريق الإتحادي</div><a href="./html/Federal road.html"><div class="termsrightbox">Federal road</div></a></div>
+			<div><a href="./html/Fence.html"><div class="termsleftbox">سياج </div><a href="./html/Fence.html"><div class="termsrightbox">Fence</div></a></div>
+			<div><a href="./html/Flood plain.html"><div class="termsleftbox">حدود الفيضان</div><a href="./html/Flood plain.html"><div class="termsrightbox">Flood plain</div></a></div>
+			<div><a href="./html/Flood sensitive area.html"><div class="termsleftbox">منطقة حساسة للفيضانات</div><a href="./html/Flood sensitive area.html"><div class="termsrightbox">Flood sensitive area</div></a></div>
+			<div><a href="./html/Floor Area Ratio (FAR).html"><div class="termsleftbox">معامل /نسبة المساحة الطابقية</div><a href="./html/Floor Area Ratio (FAR).html"><div class="termsrightbox">Floor Area Ratio (FAR)</div></a></div>
+			<div><a href="./html/Footpath.html"><div class="termsleftbox">ممر المشاة </div><a href="./html/Footpath.html"><div class="termsrightbox">Footpath</div></a></div>
+			<div><a href="./html/Freeway.html"><div class="termsleftbox">طريق سريع</div><a href="./html/Freeway.html"><div class="termsrightbox">Freeway</div></a></div>
+			<div><a href="./html/Fuel Station.html"><div class="termsleftbox">محطة وقود</div><a href="./html/Fuel Station.html"><div class="termsrightbox">Fuel Station</div></a></div>
+			<div><a href="./html/Furnishing zone.html"><div class="termsleftbox">منطقة فرش/أثاث عمراني </div><a href="./html/Furnishing zone.html"><div class="termsrightbox">Furnishing zone</div></a></div>
+			<div><a href="./html/Future extension .html"><div class="termsleftbox">اضافة مستقبلية </div><a href="./html/Future extension .html"><div class="termsrightbox">Future extension </div></a></div>
+
+		</div>
+<!------G__Letterhead------------------------------->
+		<div class="termsletterhead" id="G">
+			G
+		</div>
+<!------G__Letterhead------------------------------->
+<!------G__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Gabion basket.html"><div class="termsleftbox">شبكة حجارة</div><a href="./html/Gabion basket.html"><div class="termsrightbox">Gabion basket</div></a></div>
+			<div><a href="./html/GIS.html"><div class="termsleftbox">نظم المعلومات الجغرافية </div><a href="./html/GIS.html"><div class="termsrightbox">GIS</div></a></div>
+			<div><a href="./html/Government offices.html"><div class="termsleftbox">المكاتب الحكومية</div><a href="./html/Government offices.html"><div class="termsrightbox">Government offices</div></a></div>
+			<div><a href="./html/Grade.html"><div class="termsleftbox">الشكل العام للطريق</div><a href="./html/Grade.html"><div class="termsrightbox">Grade</div></a></div>
+			<div><a href="./html/Grade-separation.html"><div class="termsleftbox">تقاطع ذو أكثر من مستوى</div><a href="./html/Grade-separation.html"><div class="termsrightbox">Grade-separation</div></a></div>
+			<div><a href="./html/Granted plot.html"><div class="termsleftbox">أرض منحة </div><a href="./html/Granted plot.html"><div class="termsrightbox">Granted plot</div></a></div>
+			<div><a href="./html/Greenfield.html"><div class="termsleftbox">أرض جديدة /  غير مستغلة سابقا</div><a href="./html/Greenfield.html"><div class="termsrightbox">Greenfield</div></a></div>
+			<div><a href="./html/Greywater.html"><div class="termsleftbox">المياه الرمادية </div><a href="./html/Greywater.html"><div class="termsrightbox">Greywater</div></a></div>
+			<div><a href="./html/Gross Floor Area (GFA).html"><div class="termsleftbox">المساحة الإجمالية الطابقية (GFA)</div><a href="./html/Gross Floor Area (GFA).html"><div class="termsrightbox">Gross Floor Area (GFA)</div></a></div>
+			<div><a href="./html/Ground water.html"><div class="termsleftbox">مياه جوفية</div><a href="./html/Ground water.html"><div class="termsrightbox">Ground water</div></a></div>
+			<div><a href="./html/Growth management.html"><div class="termsleftbox">إدارة النمو</div><a href="./html/Growth management.html"><div class="termsrightbox">Growth management</div></a></div>
+
+		</div>
+<!------H__Letterhead------------------------------->
+		<div class="termsletterhead" id="H">
+			H
+		</div>
+<!------H__Letterhead------------------------------->
+<!------H__Terminologies---------------------------->
+		<div class="terminology">
+			
+			<div><a href="./html/Habitat.html"><div class="termsleftbox">الموطن</div><a href="./html/Habitat.html"><div class="termsrightbox">Habitat</div></a></div>
+			<div><a href="./html/Hardscape.html"><div class="termsleftbox">المساحات غير الخضراء </div><a href="./html/Hardscape.html"><div class="termsrightbox">Hardscape</div></a></div>
+			<div><a href="./html/Hazardous waste.html"><div class="termsleftbox">النفايات الخطرة </div><a href="./html/Hazardous waste.html"><div class="termsrightbox">Hazardous waste</div></a></div>
+			<div><a href="./html/Headway.html"><div class="termsleftbox">الوقت الزمني</div><a href="./html/Headway.html"><div class="termsrightbox">Headway</div></a></div>
+			<div><a href="./html/Healthcare Center.html"><div class="termsleftbox">مركز الرعاية الصحية</div><a href="./html/Healthcare Center.html"><div class="termsrightbox">Healthcare Center</div></a></div>
+			<div><a href="./html/Heritage area.html"><div class="termsleftbox">منطقة أثرية </div><a href="./html/Heritage area.html"><div class="termsrightbox">Heritage area</div></a></div>
+			<div><a href="./html/Highway.html"><div class="termsleftbox">الطريق السريع</div><a href="./html/Highway.html"><div class="termsrightbox">Highway</div></a></div>
+			<div><a href="./html/Hospital.html"><div class="termsleftbox">مستشفى</div><a href="./html/Hospital.html"><div class="termsrightbox">Hospital</div></a></div>
+			<div><a href="./html/Hospitality and Recreation (Land Use).html"><div class="termsleftbox">الأنشطه الترفيهية (استخدامات الأراضي)</div><a href="./html/Hospitality and Recreation (Land Use).html"><div class="termsrightbox">Hospitality and Recreation (Land Use)</div></a></div>
+			<div><a href="./html/Hydrology study.html"><div class="termsleftbox">الدراسة الهيدرولوجية </div><a href="./html/Hydrology study.html"><div class="termsrightbox">Hydrology study</div></a></div>
+
+		</div>
+<!------I__Letterhead------------------------------->
+		<div class="termsletterhead" id="I">
+			I
+		</div>
+<!------I__Letterhead------------------------------->
+<!------I__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Industrial (Land Use).html"><div class="termsleftbox">الصناعية (استخدامات الأرض)</div><a href="./html/Industrial (Land Use).html"><div class="termsrightbox">Industrial (Land Use)</div></a></div>
+			<div><a href="./html/Infill development.html"><div class="termsleftbox">تطوير جزئي لملء فراغات </div><a href="./html/Infill development.html"><div class="termsrightbox">Infill development</div></a></div>
+			<div><a href="./html/Infiltration.html"><div class="termsleftbox">تسرب</div><a href="./html/Infiltration.html"><div class="termsrightbox">Infiltration</div></a></div>
+			<div><a href="./html/Infrastructure.html"><div class="termsleftbox">البنية التحتية </div><a href="./html/Infrastructure.html"><div class="termsrightbox">Infrastructure</div></a></div>
+			<div><a href="./html/Infrastructure commissioning.html"><div class="termsleftbox">اختبار جودة البنية التحتية</div><a href="./html/Infrastructure commissioning.html"><div class="termsrightbox">Infrastructure commissioning</div></a></div>
+			<div><a href="./html/Inlet.html"><div class="termsleftbox">مدخل</div><a href="./html/Inlet.html"><div class="termsrightbox">Inlet</div></a></div>
+			<div><a href="./html/Invert.html"><div class="termsleftbox">قعر</div><a href="./html/Invert.html"><div class="termsrightbox">Invert</div></a></div>
+
+		</div>
+
+<!------J__Letterhead------------------------------->
+		<div class="termsletterhead" id="J">
+			J
+		</div>
+<!------J__Letterhead------------------------------->
+<!------J__Terminologies---------------------------->
+		<div class="terminology">			
+			<div></div>
+		</div>
+<!------K__Letterhead------------------------------->
+		<div class="termsletterhead" id="K">
+			K
+		</div>
+<!------K__Letterhead------------------------------->
+<!------K__Terminologies---------------------------->
+		<div class="terminology">			
+			<div></div>
+		</div>
+<!------L__Letterhead------------------------------->
+		<div class="termsletterhead" id="L">
+			L
+		</div>
+<!------L__Letterhead------------------------------->
+<!------L__Terminologies---------------------------->
+		<div class="terminology">
+			
+			<div><a href="./html/Land acquisition.html"><div class="termsleftbox">حيازة الأرض</div><a href="./html/Land acquisition.html"><div class="termsrightbox">Land acquisition</div></a></div>
+			<div><a href="./html/Land administration.html"><div class="termsleftbox">تخصيص الأراضي</div><a href="./html/Land administration.html"><div class="termsrightbox">Land administration</div></a></div>
+			<div><a href="./html/Land management.html"><div class="termsleftbox">إدارة الأراضي</div><a href="./html/Land management.html"><div class="termsrightbox">Land management</div></a></div>
+			<div><a href="./html/Land use.html"><div class="termsleftbox">استعمالات الأراضي</div><a href="./html/Land use.html"><div class="termsrightbox">Land use</div></a></div>
+			<div><a href="./html/Land use regulation.html"><div class="termsleftbox">اشتراطات استعمالات الأراضي</div><a href="./html/Land use regulation.html"><div class="termsrightbox">Land use regulation</div></a></div>
+			<div><a href="./html/Landmark.html"><div class="termsleftbox">معلم رئيسي</div><a href="./html/Landmark.html"><div class="termsrightbox">Landmark</div></a></div>
+			<div><a href="./html/Landscape.html"><div class="termsleftbox">المناظر الطبيعيه </div><a href="./html/Landscape.html"><div class="termsrightbox">Landscape</div></a></div>
+			<div><a href="./html/Lane.html"><div class="termsleftbox">حاره الطريق</div><a href="./html/Lane.html"><div class="termsrightbox">Lane</div></a></div>
+			<div><a href="./html/Level of service.html"><div class="termsleftbox">مستوى الخدمة</div><a href="./html/Level of service.html"><div class="termsrightbox">Level of service</div></a></div>
+			<div><a href="./html/Library.html"><div class="termsleftbox">مكتبة</div><a href="./html/Library.html"><div class="termsrightbox">Library</div></a></div>
+			<div><a href="./html/Licensed entrance .html"><div class="termsleftbox">مدخل مرخص </div><a href="./html/Licensed entrance .html"><div class="termsrightbox">Licensed entrance </div></a></div>
+			<div><a href="./html/Light industries.html"><div class="termsleftbox">الصناعات الخفيفة </div><a href="./html/Light industries.html"><div class="termsrightbox">Light industries</div></a></div>
+			<div><a href="./html/Light-Emitting Diode (LED).html"><div class="termsleftbox">الصمام الثنائي الباعث للضوء </div><a href="./html/Light-Emitting Diode (LED).html"><div class="termsrightbox">Light-Emitting Diode (LED)</div></a></div>
+			<div><a href="./html/Lined channel.html"><div class="termsleftbox">قناة مبطنة</div><a href="./html/Lined channel.html"><div class="termsrightbox">Lined channel</div></a></div>
+			<div><a href="./html/Local Authority.html"><div class="termsleftbox">السلطة المحلية</div><a href="./html/Local Authority.html"><div class="termsrightbox">Local Authority</div></a></div>
+			<div><a href="./html/Local road / Street.html"><div class="termsleftbox">طريق محلي</div><a href="./html/Local road / Street.html"><div class="termsrightbox">Local road / Street</div></a></div>
+			<div><a href="./html/L-shape road.html"><div class="termsleftbox">طريق على شكل حرف L</div><a href="./html/L-shape road.html"><div class="termsrightbox">L-shape road</div></a></div>
+
+		</div>
+<!------M__Letterhead------------------------------->
+		<div class="termsletterhead" id="M">
+			M
+		</div>
+<!------M__Letterhead------------------------------->
+<!------M__Terminologies---------------------------->
+		<div class="terminology">
+			
+			<div><a href="./html/Main line.html"><div class="termsleftbox">الحارة الرئيسية</div><a href="./html/Main line.html"><div class="termsrightbox">Main line</div></a></div>
+			<div><a href="./html/Majlis.html"><div class="termsleftbox">مجلس</div><a href="./html/Majlis.html"><div class="termsrightbox">Majlis</div></a></div>
+			<div><a href="./html/Master development.html"><div class="termsleftbox">تطوير المخطط العام</div><a href="./html/Master development.html"><div class="termsrightbox">Master development</div></a></div>
+			<div><a href="./html/Master plan.html"><div class="termsleftbox">المخطط العام</div><a href="./html/Master plan.html"><div class="termsrightbox">Master plan</div></a></div>
+			<div><a href="./html/Master plan stage.html"><div class="termsleftbox">مرحلة المخطط العام </div><a href="./html/Master plan stage.html"><div class="termsrightbox">Master plan stage</div></a></div>
+			<div><a href="./html/Merge.html"><div class="termsleftbox">الدمج</div><a href="./html/Merge.html"><div class="termsrightbox">Merge</div></a></div>
+			<div><a href="./html/Microclimate.html"><div class="termsleftbox">المناخ المحلي </div><a href="./html/Microclimate.html"><div class="termsrightbox">Microclimate</div></a></div>
+			<div><a href="./html/Municipality Procedures.html"><div class="termsleftbox">إجراءات البلدية</div><a href="./html/Municipality Procedures.html"><div class="termsrightbox">Municipality Procedures</div></a></div>
+			<div><a href="./html/Musalla (prayer room).html"><div class="termsleftbox">مصلى</div><a href="./html/Musalla (prayer room).html"><div class="termsrightbox">Musalla (prayer room)</div></a></div>
+
+		</div>
+<!------N__Letterhead------------------------------->
+		<div class="termsletterhead" id="N">
+			N
+		</div>
+<!------N__Letterhead------------------------------->
+<!------N__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Native species.html"><div class="termsleftbox">النباتات المحلية </div><a href="./html/Native species.html"><div class="termsrightbox">Native species</div></a></div>
+			<div><a href="./html/Neighborhood.html"><div class="termsleftbox">المجاورة السكنية</div><a href="./html/Neighborhood.html"><div class="termsrightbox">Neighborhood</div></a></div>
+			<div><a href="./html/Neighborhood Center.html"><div class="termsleftbox">مركز المجاورة السكنية</div><a href="./html/Neighborhood Center.html"><div class="termsrightbox">Neighborhood Center</div></a></div>
+			<div><a href="./html/New plot.html"><div class="termsleftbox">استحداث قسيمة</div><a href="./html/New plot.html"><div class="termsrightbox">New plot</div></a></div>
+			<div><a href="./html/No Objection Certificate (NOC).html"><div class="termsleftbox">شهادة عدم ممانعة</div><a href="./html/No Objection Certificate (NOC).html"><div class="termsrightbox">No Objection Certificate (NOC)</div></a></div>
+			<div><a href="./html/Non-Center Facility.html"><div class="termsleftbox">خدمات غير مركزية</div><a href="./html/Non-Center Facility.html"><div class="termsrightbox">Non-Center Facility</div></a></div>
+			<div><a href="./html/Non-potable water.html"><div class="termsleftbox">مياه غير صالحة للشرب </div><a href="./html/Non-potable water.html"><div class="termsrightbox">Non-potable water</div></a></div>
+			<div><a href="./html/Nursery.html"><div class="termsleftbox">الحضانة</div><a href="./html/Nursery.html"><div class="termsrightbox">Nursery</div></a></div>
+
+		</div>
+<!------O__Letterhead------------------------------->
+		<div class="termsletterhead" id="O">
+			O
+		</div>
+<!------O__Letterhead------------------------------->
+<!------O__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Off-ramp.html"><div class="termsleftbox">منحدر خروج</div><a href="./html/Off-ramp.html"><div class="termsrightbox">Off-ramp</div></a></div>
+			<div><a href="./html/Off-street Parking.html"><div class="termsleftbox">وقوف السيارات خارج الطريق</div><a href="./html/Off-street Parking.html"><div class="termsrightbox">Off-street Parking</div></a></div>
+			<div><a href="./html/On-ramp.html"><div class="termsleftbox">منحدر دخول</div><a href="./html/On-ramp.html"><div class="termsrightbox">On-ramp</div></a></div>
+			<div><a href="./html/On-street Parking.html"><div class="termsleftbox">وقوف السيارات داخل الطريق</div><a href="./html/On-street Parking.html"><div class="termsrightbox">On-street Parking</div></a></div>
+			<div><a href="./html/Open Space (Land Use).html"><div class="termsleftbox">مساحة مفتوحة (استخدام أرضي)</div><a href="./html/Open Space (Land Use).html"><div class="termsrightbox">Open Space (Land Use)</div></a></div>
+			<div><a href="./html/Outlet/Outfall.html"><div class="termsleftbox">مخرج</div><a href="./html/Outlet/Outfall.html"><div class="termsrightbox">Outlet/Outfall</div></a></div>
+			<div><a href="./html/Overpass.html""><div class="termsleftbox">ممر علوي (جسر)</div><a href="./html/Overpass.html"><div class="termsrightbox">Overpass</div></a></div>
+
+		</div>
+<!------P__Letterhead------------------------------->
+		<div class="termsletterhead" id="P">
+			P
+		</div>
+<!------P__Letterhead------------------------------->
+<!------P__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Parallel parking.html"><div class="termsleftbox">مواقف متوازية</div><a href="./html/Parallel parking.html"><div class="termsrightbox">Parallel parking</div></a></div>
+			<div><a href="./html/Parcel .html"><div class="termsleftbox">أرض /قسيمة مخططة </div><a href="./html/Parcel .html"><div class="termsrightbox">Parcel </div></a></div>
+			<div><a href="./html/Parking Area.html"><div class="termsleftbox">منطقة مخصصة لمواقف السيارات.</div><a href="./html/Parking Area.html"><div class="termsrightbox">Parking Area</div></a></div>
+			<div><a href="./html/Parking lane.html"><div class="termsleftbox">حارة وقوف السيارات</div><a href="./html/Parking lane.html"><div class="termsrightbox">Parking lane</div></a></div>
+			<div><a href="./html/Passive cooling.html"><div class="termsleftbox">التبريد السلبي </div><a href="./html/Passive cooling.html"><div class="termsrightbox">Passive cooling</div></a></div>
+			<div><a href="./html/Paved areas.html"><div class="termsleftbox">المناطق المرصوفة </div><a href="./html/Paved areas.html"><div class="termsrightbox">Paved areas</div></a></div>
+			<div><a href="./html/Pedestrian.html"><div class="termsleftbox">مشاة</div><a href="./html/Pedestrian.html"><div class="termsrightbox">Pedestrian</div></a></div>
+			<div><a href="./html/Pedestrian connection.html"><div class="termsleftbox">وصلة المشاة</div><a href="./html/Pedestrian connection.html"><div class="termsrightbox">Pedestrian connection</div></a></div>
+			<div><a href="./html/Pedestrian crossing.html"><div class="termsleftbox">ممر خاص لعبور المشاة</div><a href="./html/Pedestrian crossing.html"><div class="termsrightbox">Pedestrian crossing</div></a></div>
+			<div><a href="./html/Pedestrian friendly.html"><div class="termsleftbox">مؤهل للمشاة </div><a href="./html/Pedestrian friendly.html"><div class="termsrightbox">Pedestrian friendly</div></a></div>
+			<div><a href="./html/People of determination.html"><div class="termsleftbox">أصحاب الهمم </div><a href="./html/People of determination.html"><div class="termsrightbox">People of determination</div></a></div>
+			<div><a href="./html/Permeable pavement.html"><div class="termsleftbox">رصيف له القدره على تمرير الماء من خلاله</div><a href="./html/Permeable pavement.html"><div class="termsrightbox">Permeable pavement</div></a></div>
+			<div><a href="./html/Photovoltaic (PV).html"><div class="termsleftbox">الكهروضوئية </div><a href="./html/Photovoltaic (PV).html"><div class="termsrightbox">Photovoltaic (PV)</div></a></div>
+			<div><a href="./html/Planned area.html"><div class="termsleftbox">منطقة مخططة</div><a href="./html/Planned area.html"><div class="termsrightbox">Planned area</div></a></div>
+			<div><a href="./html/Planning  framework.html"><div class="termsleftbox">اطار التخطيط العام </div><a href="./html/Planning  framework.html"><div class="termsrightbox">Planning  framework</div></a></div>
+			<div><a href="./html/Planning approval.html"><div class="termsleftbox">اعتماد التخطيط </div><a href="./html/Planning approval.html"><div class="termsrightbox">Planning approval</div></a></div>
+			<div><a href="./html/Planning system.html"><div class="termsleftbox">نظام التخطيط</div><a href="./html/Planning system.html"><div class="termsrightbox">Planning system</div></a></div>
+			<div><a href="./html/Plaza/Baraha.html"><div class="termsleftbox">البلازا</div><a href="./html/Plaza/Baraha.html"><div class="termsrightbox">Plaza/Baraha</div></a></div>
+			<div><a href="./html/Plot boundary.html"><div class="termsleftbox">حدود القسيمة</div><a href="./html/Plot boundary.html"><div class="termsrightbox">Plot boundary</div></a></div>
+			<div><a href="./html/Plot coverage (Building coverage).html"><div class="termsleftbox">نسبة المساحة المغطاة (تغطية المباني)</div><a href="./html/Plot coverage (Building coverage).html"><div class="termsrightbox">Plot coverage (Building coverage)</div></a></div>
+			<div><a href="./html/Police station.html"><div class="termsleftbox">قسم الشرطة</div><a href="./html/Police station.html"><div class="termsrightbox">Police station</div></a></div>
+			<div><a href="./html/Post office.html"><div class="termsleftbox">مكتب البريد</div><a href="./html/Post office.html"><div class="termsrightbox">Post office</div></a></div>
+			<div><a href="./html/Posted speed.html"><div class="termsleftbox">تنبيه للسرعه القصوى</div><a href="./html/Posted speed.html"><div class="termsrightbox">Posted speed</div></a></div>
+			<div><a href="./html/Potable water.html"><div class="termsleftbox">المياه الصالحة للشرب </div><a href="./html/Potable water.html"><div class="termsrightbox">Potable water</div></a></div>
+			<div><a href="./html/Private road.html"><div class="termsleftbox">طريق خاص</div><a href="./html/Private road.html"><div class="termsrightbox">Private road</div></a></div>
+			<div><a href="./html/Productive plants.html"><div class="termsleftbox">النباتات المنتجة </div><a href="./html/Productive plants.html"><div class="termsrightbox">Productive plants</div></a></div>
+			<div><a href="./html/Project parameters.html"><div class="termsleftbox">موجهات المشروع </div><a href="./html/Project parameters.html"><div class="termsrightbox">Project parameters</div></a></div>
+			<div><a href="./html/Property .html"><div class="termsleftbox">قسيمة  / أرض غير مخططة </div><a href="./html/Property .html"><div class="termsrightbox">Property </div></a></div>
+			<div><a href="./html/Public realm.html"><div class="termsleftbox">المجال العام</div><a href="./html/Public realm.html"><div class="termsrightbox">Public realm</div></a></div>
+
+		</div>
+<!------Q__Letterhead------------------------------->
+		<div class="termsletterhead" id="Q">
+			Q
+		</div>
+<!------Q__Letterhead------------------------------->
+<!------Q__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Queue length.html"><div class="termsleftbox">طول طابور المركبات</div><a href="./html/Queue length.html"><div class="termsrightbox">Queue length</div></a></div>
+
+		</div>
+<!------R__Letterhead------------------------------->
+		<div class="termsletterhead" id="R">
+			R
+		</div>
+<!------R__Letterhead------------------------------->
+<!------R__Terminologies---------------------------->
+		<div class="terminology">			
+
+			<div><a href="./html/Raised crosswalk.html"><div class="termsleftbox"> معبر المشاة</div><a href="./html/Raised crosswalk.html"><div class="termsrightbox">Raised crosswalk</div></a></div>
+			<div><a href="./html/Raised intersection.html"><div class="termsleftbox">تقاطع </div><a href="./html/Raised intersection.html"><div class="termsrightbox">Raised intersection</div></a></div>
+			<div><a href="./html/Reconfiguration of land.html"><div class="termsleftbox">إعادة تشكيل قطعة الأرض</div><a href="./html/Reconfiguration of land.html"><div class="termsrightbox">Reconfiguration of land</div></a></div>
+			<div><a href="./html/Recycling.html"><div class="termsleftbox">إعادة التدوير </div><a href="./html/Recycling.html"><div class="termsrightbox">Recycling</div></a></div>
+			<div><a href="./html/Reflectivity.html"><div class="termsleftbox">الانعكاسية</div><a href="./html/Reflectivity.html"><div class="termsrightbox">Reflectivity</div></a></div>
+			<div><a href="./html/Re-planning.html"><div class="termsleftbox">اعادة تخطيط</div><a href="./html/Re-planning.html"><div class="termsrightbox">Re-planning</div></a></div>
+			<div><a href="./html/Reserved (Land Use).html"><div class="termsleftbox">محجوز (استخدامات الأرض)</div><a href="./html/Reserved (Land Use).html"><div class="termsrightbox">Reserved (Land Use)</div></a></div>
+			<div><a href="./html/Residential (Land Use).html"><div class="termsleftbox">سكني (استعمال الارض)</div><a href="./html/Residential (Land Use).html"><div class="termsrightbox">Residential (Land Use)</div></a></div>
+			<div><a href="./html/Retaining wall.html"><div class="termsleftbox">حائط إستنادي </div><a href="./html/Retaining wall.html"><div class="termsrightbox">Retaining wall</div></a></div>
+			<div><a href="./html/Reuse.html"><div class="termsleftbox">إعادة الاستخدام </div><a href="./html/Reuse.html"><div class="termsrightbox">Reuse</div></a></div>
+			<div><a href="./html/Right-of-way (ROW).html"><div class="termsleftbox">حدود الطريق</div><a href="./html/Right-of-way (ROW).html"><div class="termsrightbox">Right-of-way (ROW)</div></a></div>
+			<div><a href="./html/Riprap.html"><div class="termsleftbox">تدبيش</div><a href="./html/Riprap.html"><div class="termsrightbox">Riprap</div></a></div>
+			<div><a href="./html/Road.html"><div class="termsleftbox">طريق</div><a href="./html/Road.html"><div class="termsrightbox">Road</div></a></div>
+			<div><a href="./html/Road marking.html"><div class="termsleftbox">علامات الطريق</div><a href="./html/Road marking.html"><div class="termsrightbox">Road marking</div></a></div>
+			<div><a href="./html/Roundabout.html"><div class="termsleftbox">الدوار</div><a href="./html/Roundabout.html"><div class="termsrightbox">Roundabout</div></a></div>
+			<div><a href="./html/ROW assets.html"><div class="termsleftbox">مكونات الطريق</div><a href="./html/ROW assets.html"><div class="termsrightbox">ROW assets</div></a></div>
+			<div><a href="./html/ROW cross-section.html"><div class="termsleftbox">قطاع عرضي للطريق</div><a href="./html/ROW cross-section.html"><div class="termsrightbox">ROW cross-section</div></a></div>
+			<div><a href="./html/ROW profile.html"><div class="termsleftbox">القطاع الطولي للطريق</div><a href="./html/ROW profile.html"><div class="termsrightbox">ROW profile</div></a></div>
+			<div><a href="./html/ROW space.html"><div class="termsleftbox">0</div><a href="./html/ROW space.html"><div class="termsrightbox">ROW space</div></a></div>
+			<div><a href="./html/Rumble strip.html"><div class="termsleftbox">0</div><a href="./html/Rumble strip.html"><div class="termsrightbox">Rumble strip</div></a></div>
+			<div><a href="./html/Runoff.html"><div class="termsleftbox">جريان سطحى</div><a href="./html/Runoff.html"><div class="termsrightbox">Runoff</div></a></div>
+			<div><a href="./html/Rural.html"><div class="termsleftbox">ريفي</div><a href="./html/Rural.html"><div class="termsrightbox">Rural</div></a></div>
+
+		</div>
+<!------S__Letterhead------------------------------->
+		<div class="termsletterhead" id="S">
+			S
+		</div>
+<!------S__Letterhead------------------------------->
+<!------S__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Schools.html"><div class="termsleftbox">المدارس</div><a href="./html/Schools.html"><div class="termsrightbox">Schools</div></a></div>
+			<div><a href="./html/Schools, Cycle 1.html"><div class="termsleftbox">المدارس ، الحلقة 1</div><a href="./html/Schools, Cycle 1.html"><div class="termsrightbox">Schools, Cycle 1</div></a></div>
+			<div><a href="./html/Schools, Cycle 2.html"><div class="termsleftbox">المدارس ، الحلقة 2</div><a href="./html/Schools, Cycle 2.html"><div class="termsrightbox">Schools, Cycle 2</div></a></div>
+			<div><a href="./html/Schools, Cycle 3.html"><div class="termsleftbox">المدارس ، الحلقة 3</div><a href="./html/Schools, Cycle 3.html"><div class="termsrightbox">Schools, Cycle 3</div></a></div>
+			<div><a href="./html/Schools, K-12.html"><div class="termsleftbox">المدارس ، K-12</div><a href="./html/Schools, K-12.html"><div class="termsrightbox">Schools, K-12</div></a></div>
+			<div><a href="./html/Sector.html"><div class="termsleftbox">القطاع الطولي للطريق</div><a href="./html/Sector.html"><div class="termsrightbox">Sector</div></a></div>
+			<div><a href="./html/Sediment.html"><div class="termsleftbox">رواسب</div><a href="./html/Sediment.html"><div class="termsrightbox">Sediment</div></a></div>
+			<div><a href="./html/Sediment trap.html"><div class="termsleftbox">مصيدة رواسب</div><a href="./html/Sediment trap.html"><div class="termsrightbox">Sediment trap</div></a></div>
+			<div><a href="./html/Seepage.html"><div class="termsleftbox">رشح</div><a href="./html/Seepage.html"><div class="termsrightbox">Seepage</div></a></div>
+			<div><a href="./html/Service road.html"><div class="termsleftbox">طريق خدمة</div><a href="./html/Service road.html"><div class="termsrightbox">Service road</div></a></div>
+			<div><a href="./html/Setback.html"><div class="termsleftbox">ارتداد </div><a href="./html/Setback.html"><div class="termsrightbox">Setback</div></a></div>
+			<div><a href="./html/Settlement hierarchy.html"><div class="termsleftbox">التسلسل الهرمي للتجمعات العمرانية </div><a href="./html/Settlement hierarchy.html"><div class="termsrightbox">Settlement hierarchy</div></a></div>
+			<div><a href="./html/Sewer tank.html"><div class="termsleftbox">خزان صرف صحي </div><a href="./html/Sewer tank.html"><div class="termsrightbox">Sewer tank</div></a></div>
+			<div><a href="./html/Shared / Public amenities.html"><div class="termsleftbox">المرافق الخدمية العامة / المشتركة </div><a href="./html/Shared / Public amenities.html"><div class="termsrightbox">Shared / Public amenities</div></a></div>
+			<div><a href="./html/Shared lane / Mixed traffic facility.html"><div class="termsleftbox">مسار حركة مشترك / مرافق حركة المرور المختلطة </div><a href="./html/Shared lane / Mixed traffic facility.html"><div class="termsrightbox">Shared lane / Mixed traffic facility</div></a></div>
+			<div><a href="./html/Sidewalk.html"><div class="termsleftbox">الرصيف </div><a href="./html/Sidewalk.html"><div class="termsrightbox">Sidewalk</div></a></div>
+			<div><a href="./html/Sight distance.html"><div class="termsleftbox">مسافة البصر</div><a href="./html/Sight distance.html"><div class="termsrightbox">Sight distance</div></a></div>
+			<div><a href="./html/Sikka (Alley).html"><div class="termsleftbox">سكه</div><a href="./html/Sikka (Alley).html"><div class="termsrightbox">Sikka (Alley)</div></a></div>
+			<div><a href="./html/Softscape.html"><div class="termsleftbox">المساحات الخضراء والمشجرة </div><a href="./html/Softscape.html"><div class="termsrightbox">Softscape</div></a></div>
+			<div><a href="./html/Solar Reflectance Index (SRI).html"><div class="termsleftbox">مؤشر الانعكاس الشمسي </div><a href="./html/Solar Reflectance Index (SRI).html"><div class="termsrightbox">Solar Reflectance Index (SRI)</div></a></div>
+			<div><a href="./html/Space Administration.html"><div class="termsleftbox">عملية إدارة الفراغ</div><a href="./html/Space Administration.html"><div class="termsrightbox">Space Administration</div></a></div>
+			<div><a href="./html/Space Management.html"><div class="termsleftbox">عملية تخطيط الفراغ</div><a href="./html/Space Management.html"><div class="termsrightbox">Space Management</div></a></div>
+			<div><a href="./html/Speed cushion.html"><div class="termsleftbox">وسادة لتهدئة السرعه</div><a href="./html/Speed cushion.html"><div class="termsrightbox">Speed cushion</div></a></div>
+			<div><a href="./html/Speed hump.html"><div class="termsleftbox">مطب</div><a href="./html/Speed hump.html"><div class="termsrightbox">Speed hump</div></a></div>
+			<div><a href="./html/Speed table.html"><div class="termsleftbox">طاولة السرعة</div><a href="./html/Speed table.html"><div class="termsrightbox">Speed table</div></a></div>
+			<div><a href="./html/Spillway.html"><div class="termsleftbox">مفيض</div><a href="./html/Spillway.html"><div class="termsrightbox">Spillway</div></a></div>
+			<div><a href="./html/Sports Center.html"><div class="termsleftbox">المركز الرياضي</div><a href="./html/Sports Center.html"><div class="termsrightbox">Sports Center</div></a></div>
+			<div><a href="./html/Stakeholder.html"><div class="termsleftbox">الشركاء</div><a href="./html/Stakeholder.html"><div class="termsrightbox">Stakeholder</div></a></div>
+			<div><a href="./html/Stopped area/parcel.html"><div class="termsleftbox">منطقة موقوفة </div><a href="./html/Stopped area/parcel.html"><div class="termsrightbox">Stopped area/parcel</div></a></div>
+			<div><a href="./html/Stormwater Management Plan.html"><div class="termsleftbox">خطة إدارة مياه العواصف  </div><a href="./html/Stormwater Management Plan.html"><div class="termsrightbox">Stormwater Management Plan</div></a></div>
+			<div><a href="./html/Street.html"><div class="termsleftbox">شارع </div><a href="./html/Street.html"><div class="termsrightbox">Street</div></a></div>
+			<div><a href="./html/Street furniture.html"><div class="termsleftbox">فرش الشارع </div><a href="./html/Street furniture.html"><div class="termsrightbox">Street furniture</div></a></div>
+			<div><a href="./html/Street name.html"><div class="termsleftbox">اسم الشارع</div><a href="./html/Street name.html"><div class="termsrightbox">Street name</div></a></div>
+			<div><a href="./html/Streetscape.html"><div class="termsleftbox">عناصر فرش الطريق</div><a href="./html/Streetscape.html"><div class="termsrightbox">Streetscape</div></a></div>
+			<div><a href="./html/Structure plan.html"><div class="termsleftbox">المخطط الهيكلي</div><a href="./html/Structure plan.html"><div class="termsrightbox">Structure plan</div></a></div>
+			<div><a href="./html/Study boundary.html"><div class="termsleftbox">منطقة الدراسة </div><a href="./html/Study boundary.html"><div class="termsrightbox">Study boundary</div></a></div>
+			<div><a href="./html/Subdivide.html"><div class="termsleftbox">تقسيم</div><a href="./html/Subdivide.html"><div class="termsrightbox">Subdivide</div></a></div>
+			<div><a href="./html/Subsoil irrigation.html"><div class="termsleftbox">الري من باطن الارض </div><a href="./html/Subsoil irrigation.html"><div class="termsrightbox">Subsoil irrigation</div></a></div>
+			<div><a href="./html/Suburban.html"><div class="termsleftbox">ضاحية</div><a href="./html/Suburban.html"><div class="termsrightbox">Suburban</div></a></div>
+			<div><a href="./html/Support centers.html"><div class="termsleftbox">مراكز دعم الأسرة</div><a href="./html/Support centers.html"><div class="termsrightbox">Support centers</div></a></div>
+			<div><a href="./html/Sustainability.html"><div class="termsleftbox">الاستدامة</div><a href="./html/Sustainability.html"><div class="termsrightbox">Sustainability</div></a></div>
+
+		</div>
+<!------T__Letterhead------------------------------->
+		<div class="termsletterhead" id="T">
+			T
+		</div>
+<!------T__Letterhead------------------------------->
+<!------T__Terminologies---------------------------->
+		<div class="terminology">
+			
+			<div><a href="./html/Tafweet - Claiming Ancestral Lands.html"><div class="termsleftbox">التفويت </div><a href="./html/Tafweet - Claiming Ancestral Lands.html"><div class="termsrightbox">Tafweet - Claiming Ancestral Lands</div></a></div>
+			<div><a href="./html/Thoroughfare designation.html"><div class="termsleftbox">تعيين الطريق العام</div><a href="./html/Thoroughfare designation.html"><div class="termsrightbox">Thoroughfare designation</div></a></div>
+			<div><a href="./html/Through lot.html"><div class="termsleftbox">من خلال الكثير</div><a href="./html/Through lot.html"><div class="termsrightbox">Through lot</div></a></div>
+			<div><a href="./html/Through zone.html"><div class="termsleftbox">منطقة مخصصه لحركة المشاة</div><a href="./html/Through zone.html"><div class="termsrightbox">Through zone</div></a></div>
+			<div><a href="./html/T-Intersection.html"><div class="termsleftbox">تقاطع على شكل حرف T</div><a href="./html/T-Intersection.html"><div class="termsrightbox">T-Intersection</div></a></div>
+			<div><a href="./html/Title deed.html"><div class="termsleftbox">سند الملكية </div><a href="./html/Title deed.html"><div class="termsrightbox">Title deed</div></a></div>
+			<div><a href="./html/Town.html"><div class="termsleftbox">المدينة</div><a href="./html/Town.html"><div class="termsrightbox">Town</div></a></div>
+			<div><a href="./html/Traffic calming.html"><div class="termsleftbox">تخفيف الازدحام</div><a href="./html/Traffic calming.html"><div class="termsrightbox">Traffic calming</div></a></div>
+			<div><a href="./html/Traffic diversion.html"><div class="termsleftbox">تحويل حركة المرور</div><a href="./html/Traffic diversion.html"><div class="termsrightbox">Traffic diversion</div></a></div>
+			<div><a href="./html/Traffic volume.html"><div class="termsleftbox">حجم المرور</div><a href="./html/Traffic volume.html"><div class="termsrightbox">Traffic volume</div></a></div>
+			<div><a href="./html/Transit space.html"><div class="termsleftbox">فراغات النقل</div><a href="./html/Transit space.html"><div class="termsrightbox">Transit space</div></a></div>
+			<div><a href="./html/Transport Impact Study (TIS).html"><div class="termsleftbox">دراسة التأثير المروري</div><a href="./html/Transport Impact Study (TIS).html"><div class="termsrightbox">Transport Impact Study (TIS)</div></a></div>
+			<div><a href="./html/Transportation (Land Use).html"><div class="termsleftbox">النقل (استخدامات الأراضي)</div><a href="./html/Transportation (Land Use).html"><div class="termsrightbox">Transportation (Land Use)</div></a></div>
+			<div><a href="./html/Treated Effluent (TE).html"><div class="termsleftbox">مياه الصرف المعالجة </div><a href="./html/Treated Effluent (TE).html"><div class="termsrightbox">Treated Effluent (TE)</div></a></div>
+
+		</div>
+<!------U__Letterhead------------------------------->
+		<div class="termsletterhead" id="U">
+			U
+		</div>
+<!------U__Letterhead------------------------------->
+<!------U__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Unbuilt roads.html"><div class="termsleftbox">طرق غير مبنية</div><a href="./html/Unbuilt roads.html"><div class="termsrightbox">Unbuilt roads</div></a></div>
+			<div><a href="./html/Under planning area.html"><div class="termsleftbox">منطقة تحت التخطيط </div><a href="./html/Under planning area.html"><div class="termsrightbox">Under planning area</div></a></div>
+			<div><a href="./html/Unpaved road.html"><div class="termsleftbox">طريق ترابي</div><a href="./html/Unpaved road.html"><div class="termsrightbox">Unpaved road</div></a></div>
+			<div><a href="./html/Unplanned area .html"><div class="termsleftbox">منطقة غير مخططة </div><a href="./html/Unplanned area .html"><div class="termsrightbox">Unplanned area </div></a></div>
+			<div><a href="./html/Urban.html"><div class="termsleftbox">الحضر</div><a href="./html/Urban.html"><div class="termsrightbox">Urban</div></a></div>
+			<div><a href="./html/Urban farming.html"><div class="termsleftbox">الزراعة الحضرية </div><a href="./html/Urban farming.html"><div class="termsrightbox">Urban farming</div></a></div>
+			<div><a href="./html/Urban growth boundary.html"><div class="termsleftbox">نطاق التوسع الحضري </div><a href="./html/Urban growth boundary.html"><div class="termsrightbox">Urban growth boundary</div></a></div>
+			<div><a href="./html/Urban heat island effect.html"><div class="termsleftbox">تأثير الجزر الحراريّة الحضريّة الحضرية </div><a href="./html/Urban heat island effect.html"><div class="termsrightbox">Urban heat island effect</div></a></div>
+			<div><a href="./html/Urban sprawl.html"><div class="termsleftbox">الزحف/ ترهل  العمراني العشوائي </div><a href="./html/Urban sprawl.html"><div class="termsrightbox">Urban sprawl</div></a></div>
+			<div><a href="./html/Urbanization.html"><div class="termsleftbox">التحول الى الحضر</div><a href="./html/Urbanization.html"><div class="termsrightbox">Urbanization</div></a></div>
+			<div><a href="./html/Utility and Infrastructure (Land Use).html"><div class="termsleftbox">المرافق والبنية التحتية (استخدامات الأراضي)</div><a href="./html/Utility and Infrastructure (Land Use).html"><div class="termsrightbox">Utility and Infrastructure (Land Use)</div></a></div>
+			<div><a href="./html/Utility Corridor.html"><div class="termsleftbox">ممر البنيه التحتيه</div><a href="./html/Utility Corridor.html"><div class="termsrightbox">Utility Corridor</div></a></div>
+			<div><a href="./html/Utility Networks.html"><div class="termsleftbox">شبكات المرافق</div><a href="./html/Utility Networks.html"><div class="termsrightbox">Utility Networks</div></a></div>
+
+		</div>
+<!------V__Letterhead------------------------------------------>
+		<div class="termsletterhead" id="V">
+			V
+		</div>
+<!------V__Letterhead------------------------------------------>
+<!------V__Terminologies--------------------------------------->
+		<div class="terminology">			
+			<div></div>
+		</div>	
+<!------W__Letterhead------------------------------->
+		<div class="termsletterhead" id="W">
+			W
+		</div>
+<!------W__Letterhead------------------------------->
+<!------W__Terminologies---------------------------->
+		<div class="terminology">
+
+			<div><a href="./html/Wadi.html"><div class="termsleftbox">وادي </div><a href="./html/Wadi.html"><div class="termsrightbox">Wadi</div></a></div>
+			<div><a href="./html/Walkable.html"><div class="termsleftbox">قابل للمشي</div><a href="./html/Walkable.html"><div class="termsrightbox">Walkable</div></a></div>
+			<div><a href="./html/Walking distance.html"><div class="termsleftbox">سيرا على الاقدام</div><a href="./html/Walking distance.html"><div class="termsrightbox">Walking distance</div></a></div>
+			<div><a href="./html/Waste segregation.html"><div class="termsleftbox">فرز/فصل النفايات </div><a href="./html/Waste segregation.html"><div class="termsrightbox">Waste segregation</div></a></div>
+			<div><a href="./html/Wastewater Treatment Plant.html"><div class="termsleftbox">محطة معالجة مياه الصرف الصحي </div><a href="./html/Wastewater Treatment Plant.html"><div class="termsrightbox">Wastewater Treatment Plant</div></a></div>
+			<div><a href="./html/Weaving.html"><div class="termsleftbox">إنسيابية الحركة التداخلية في مناطق المرور </div><a href="./html/Weaving.html"><div class="termsrightbox">Weaving</div></a></div>
+			<div><a href="./html/Weaving length.html"><div class="termsleftbox">مسافة إنسيابية الحركة التداخلية في مناطق المرور </div><a href="./html/Weaving length.html"><div class="termsrightbox">Weaving length</div></a></div>
+			<div><a href="./html/Weaving section.html"><div class="termsleftbox">قسم إنسيابية الحركة التداخلية في مناطق المرور </div><a href="./html/Weaving section.html"><div class="termsrightbox">Weaving section</div></a></div>
+			<div><a href="./html/Wedding Hall.html"><div class="termsleftbox">قاعة الزفاف</div><a href="./html/Wedding Hall.html"><div class="termsrightbox">Wedding Hall</div></a></div>
+			<div><a href="./html/Wingwall.html"><div class="termsleftbox">حائط توجيه</div><a href="./html/Wingwall.html"><div class="termsrightbox">Wingwall</div></a></div>
+
+		</div>
+<!------X__Letterhead------------------------------->
+		<div class="termsletterhead" id="X">
+			X
+		</div>
+<!------X__Letterhead------------------------------->
+<!------X__Terminologies---------------------------->
+		<div class="terminology">			
+			<div></div>
+		</div>
+<!------Y__Letterhead------------------------------->
+		<div class="termsletterhead" id="Y">
+			Y
+		</div>
+<!------Y__Letterhead------------------------------->
+<!------Y__Terminologies---------------------------->
+		<div class="terminology">			
+			<div></div>
+		</div>
+<!------Z__Letterhead------------------------------->
+		<div class="termsletterhead" id="Z">
+			Z
+		</div>
+<!------Z__Letterhead------------------------------->
+<!------Z__Terminologies---------------------------->
+		<div class="terminology">
+			
+			<div><a href="./html/Zebra crossing.html"><div class="termsleftbox">تقاطعات مشاه مميزه</div><a href="./html/Zebra crossing.html"><div class="termsrightbox">Zebra crossing</div></a></div>
+			<div><a href="./html/Zoning.html"><div class="termsleftbox">تقسيم المناطق</div><a href="./html/Zoning.html"><div class="termsrightbox">Zoning</div></a></div>
+			<div><a href="./html/Zoning regulation.html"><div class="termsleftbox">لوائح تنظيم المناطق </div><a href="./html/Zoning regulation.html"><div class="termsrightbox">Zoning regulation</div></a></div>
+
+		</div>
+<!------Z__Terminologies---------------------------->
+<!------End terminologies--------------------------->
+
+	</div>	<!--------------end main body------------->
+
+<!----------footer--------------------->
+	<div class="footer">
+		<div><a href="index.html">Main Page</a></div>
+		<div><a href=#>PDF version</a></div>
+		<div><a href="Disciplines.html">Discipline</a></div>
+	</div>
+<!----------footer---------------------->
+<!----------END div--------------------->
+</div>
+
+</div>
+
+</body>
+</html>

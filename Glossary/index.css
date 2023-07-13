@@ -1,0 +1,378 @@
+ /*---------------Color style----------------------------------------------*/
+/*------https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241-----*/
+/*------------------------------------------------------------------------*/
+/*------ .leftcol						----------*/
+/*------	.leftheader					----------*/
+/*------	.lefttitle					----------*/
+/*------		.title1					----------*/
+/*------		.leftframe				----------*/
+/*------	.leftline					----------*/
+/*------	.leftfooter					----------*/
+/*------ .midcol						----------*/
+/*------	.midheader					----------*/
+/*------	.midtitle					----------*/
+/*------		.title2					----------*/
+/*------		.title2text				----------*/
+/*------		.midlinks				----------*/
+/*------		.midalpha				----------*/
+/*------	.midline					----------*/
+/*------		.---					----------*/
+/*------	.midfooter					----------*/
+/*------ .rightcol						----------*/
+/*------	.rightheader					----------*/
+/*------	.righttitle					----------*/
+/*------		.searchbox				----------*/
+/*------	.rightline					----------*/
+/*------	.rightfooter					----------*/
+/*------------------------------------------------------------------------*/
+
+
+
+/*---------------set html height to full page--------*/
+html,
+body 
+	{
+	height: 100%;
+	width: 100%;
+	}
+/*---------------set html height to full page--------*/
+/*---------------Req---------------------------------*/
+* 
+	{
+	box-sizing: border-box;
+	}
+/*---------------Req---------------------------------*/
+/*---------------Style the body----------------------*/
+body 
+	{
+	font-family: Arial;
+	margin: 0;
+	}
+/*---------------Style the body----------------------*/
+/*---------------style links-------------------------*/
+a
+{
+Color:white;
+}
+
+a:link
+{
+text-decoration: none;
+}
+
+a:hover
+{
+color:#EE6C4D;
+}
+/*---------------style links-------------------------*/
+/*---------------style main--------------------------*/
+.main
+	{
+	display:flex;
+	height: 100%;
+	}
+/*---------------style main--------------------------*/
+/*---------------left column-------------------------*/
+.leftcol
+	{
+	display:flex;
+	flex-direction:column;
+	flex:50%;
+	min-width:250px;
+	}
+/*---------------left column-------------------------*/
+/*---------------middle column-----------------------*/
+.midcol
+	{
+	display:flex;
+	flex-direction:column;
+	flex:30%;
+	min-width:350px;
+	background-color:#98C1D9;
+	}
+/*---------------middle column-----------------------*/
+/*---------------right column------------------------*/
+.rightcol
+	{
+	display:flex;
+	flex-direction:column;
+	flex:20%;
+	min-width:155px;
+	}
+/*---------------right column------------------------*/
+/*---------------header left-------------------------*/
+.leftheader
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:left;
+	height:10%;
+	min-height:60px;
+	padding:5px;
+	background-color:white;
+	}
+
+.leftheader >img
+	{
+	height:50px;
+	padding:2px;
+	}
+/*---------------header left-------------------------*/
+/*---------------header mid--------------------------*/
+.midheader
+	{
+	display:flex;
+	height:10%;
+	min-height:60px;
+	}
+/*---------------header mid--------------------------*/
+/*---------------header right-------------------------*/
+.rightheader
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	height:10%;
+	min-height:60px;
+	background-color:white;
+	}	
+
+.rightheader >img
+	{
+	height:30px;
+	width:155px;
+	margin:15px;
+	}
+/*---------------header left-------------------------*/
+/*---------------lefttitle---------------------------*/
+.lefttitle
+	{
+	display: flex;
+	flex-direction:column;
+	height: 82%;
+	min-height:450px;
+	}
+/*---------------lefttitle---------------------------*/
+/*---------------title 1-----------------------------*/
+.title1
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-end;
+	height:150px;
+	padding:10px;
+	font-size:50px;
+	font-weight:bold;
+	color:#98C1D9;
+	text-align:right;
+	}
+/*---------------title 1-----------------------------*/
+/*---------------midtitle----------------------------*/
+.midtitle
+	{
+	display: flex;
+	flex-direction:column;
+	height: 82%;
+	min-height: 450px;
+	}
+/*---------------midtitle----------------------------*/
+/*---------------title 2-----------------------------*/
+.title2
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	/*----height:150px;------*/
+	font-size:120px;
+	font-weight:bold;
+	text-align:left;
+	color:white;
+	}
+
+.title2text 
+	{
+	display:flex;
+	flex-direction:row;
+	justify-content: flex-start;
+	/*----height:60px;------*/
+	}
+pt
+	{
+	font-size:12px;
+	text-align:left;
+	color:white;
+	padding:10px;	
+	}
+/*---------------title 2-----------------------------*/
+/*---------------righttitle--------------------------*/
+.righttitle
+	{
+	display: flex;
+	flex-direction:column;
+	height: 82%;
+	min-height: 450px;
+	}
+/*---------------righttitle--------------------------*/
+/*---------------line left---------------------------*/
+.leftline
+	{
+	display:flex;
+	height:3%;
+	background-color:#3D5A80;
+	}
+/*---------------line left---------------------------*/
+/*---------------line middle-------------------------*/
+.midline
+	{
+	display:flex;
+	height:3%;
+	background-color:#EE6C4D;
+	font-size:10px;
+	align-items:center;
+	padding-left:10px;
+	}
+
+.midline a:hover
+	{
+	color:black;
+	font-weight:bold;
+	}
+/*---------------line middle-------------------------*/
+/*---------------line right--------------------------*/
+.rightline
+	{
+	display:flex;
+	height:3%;
+	background-color:#293241;
+	}
+/*---------------line right--------------------------*/
+/*---------------footer left-------------------------*/
+.leftfooter
+	{
+	display:flex;
+	height:5%;
+	}
+/*---------------footer left-------------------------*/
+/*---------------footer mid--------------------------*/
+.midfooter
+	{
+	display:flex;
+	height:5%;
+	background-color:#98C1D9;
+	}
+/*---------------footer mid--------------------------*/
+/*---------------footer right------------------------*/
+.rightfooter
+	{
+	display:flex;
+	height:5%;
+	}
+/*---------------footer right------------------------*/	
+/*---------------left frame--------------------------*/	
+.leftframe
+	{
+	overflow:hidden;
+	height:400px;
+	margin-bottom: auto;
+	}
+/*---------------left frame--------------------------*/	
+/*---------------mid frame---------------------------*/	
+.midlinks
+	{
+	display:flex;	
+	background-color:#3D5A80;
+	margin-right:10px;
+	margin-left:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+	border-radius:5px;
+	font-size:16px;
+	font-weight:bold;
+	text-align:left;
+	color:white;
+	padding:8px;
+	}
+.midlinks:hover
+	{
+	font-size:150%;
+	background-color:#293241;
+	}
+/*---pl------*/
+/*---	{			------*/
+/*---	font-size:16px;		------*/
+/*---	font-weight:bold;	------*/
+/*---	text-align:left;	------*/
+/*---	color:white;		------*/
+/*---	padding:8px;		------*/
+/*---	}			------*/
+/*---------------mid frame---------------------------*/	
+/*---------------mid alpha---------------------------*/	
+.midalpha
+	{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	/*----height:100px;-----*/	
+	margin:8px;
+	justify-content:space-evenly;
+	}
+.midalpha >div
+	{
+	font-weight:bold;
+	width:35px;
+	margin:2px;
+	padding:5px;
+	background-color:#3D5A80;
+	border-radius:5px;
+	justify-content:center;
+	align-items:center;
+	display:flex;
+	overflow:hidden;
+	}
+.midalpha >div:hover
+	{
+	font-size:200%;
+	background-color:#293241;
+	}
+
+/*---------------mid alpha---------------------------*/
+/*---------------right searchbox---------------------*/
+#termsearch 
+	{
+	width: 80%;
+	font-size: 12px;
+	padding:5px;
+	border: 1px solid silver;
+	margin-bottom: 12px;
+	align-self: center;
+	}
+/*---------------right searchbox---------------------*/
+	/*-------terminology list--------------------*/
+#terminologies 
+	{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	}
+	/*-------terminology list--------------------*/
+	/*-------terminology list link style---------*/
+#terminologies li a 
+	{
+	width:100px;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 10px;
+	color: black;
+	display: block
+	text-align:left;
+	margin-left:10%;
+	}
+	/*-------terminology list link style---------*/
+	/*-------terminology list link hover---------*/
+#terminologies li a:hover:not(.header) 
+	{
+	font-size:150%;
+	color:#98C1D9;
+	}
+/*---------terminology list hover-------*/
+/*---------------right searchbox---------------------*/
