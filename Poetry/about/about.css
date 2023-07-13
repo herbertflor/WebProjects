@@ -1,7 +1,11 @@
 html	{overflow:auto;		}
 
 .mainleft
-	{	height:100%	}
+	{
+	height:100%;
+	padding-bottom:20px;
+	}
+
 .mainright
 	{	height:unset	}
 
@@ -10,6 +14,11 @@ html	{overflow:auto;		}
 
 #topics	
 	{	margin-bottom:20px;	}
+
+#sort
+	{	cursor:pointer;		}
+#sort:hover
+	{	color:#D80032;		}
 
 table	{
 	width:100%;
@@ -37,6 +46,10 @@ tr a:hover
 	color:white;
 	}
 
+#simpleTable tr:hover td
+	{
+	background-color: unset;
+	}
 
 /*---------------style middle right accordion--------*/
 .accordioncontainer
@@ -122,6 +135,12 @@ tr a:hover
 	{margin-bottom:5px;}
 
 .panel a:hover
+	{
+	color:#D80032;
+	font-weight:bold;
+	}
+
+li a:hover
 	{
 	color:#D80032;
 	font-weight:bold;
