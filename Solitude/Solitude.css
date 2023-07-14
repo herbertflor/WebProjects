@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/*--- @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');	---*/
+/*---@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');		---*/
 
 /*---------------Color style----------------------------------------------*/
 /*------https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557-----*/
@@ -48,6 +48,19 @@ a:hover
 	}
 	
 /*---------------Style the links---------------------*/
+/----------------Font Face---------------------------*/
+@font-face
+	{
+	font-family: Dancing+Script;
+	src: url(../Assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+	}
+
+@font-face
+	{
+	font-family: Montserrat;
+	src: url(../Assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+	}
+/----------------Font Face---------------------------*/
 /*---------------style text--------------------------*/
 p	/*--------main body text---------*/
 	{
